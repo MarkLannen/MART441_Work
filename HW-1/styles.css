@@ -1,18 +1,37 @@
 
 body {
     margin: 0;
+    padding: 0;
+    background-image: url("img/AspenDawn_1500px.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     font-family: 'Raleway';
     font-size: 18px;
     color: #333;
 }
 
 .hero {
-    background-image: url(img/AspenDawn_1500px.jpg);
+    background-image: url("img/AspenDawn_1500px.jpg");
+    min-height: 340px;
     background-size: cover;
-    background-position: center center;
+    background-position: left;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, .8); */
+    background-size: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+.hero .title {
+    margin-top: 150px;
+    color: #fff;
+    float: right;
+    margin-top: 170px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(120, 120, 120, 0.7);
 }
 
 .hero h1 {
