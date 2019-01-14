@@ -2,28 +2,30 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("img/AspenDawn_1500px.jpg");
+    background-image: url("img/2Bison-1500px.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-family: 'Raleway';
     font-size: 18px;
-    color: #333;
+    color: #fff;
 }
 
 .hero {
     background-image: url("img/AspenDawn_1500px.jpg");
-    min-height: 340px;
+    min-height: 700px;    
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
 }
 
 .hero .title {
+    
     margin-top: 150px;
+    max-width: 75%;
     color: #fff;
     float: right;
     margin-top: 170px;
@@ -34,7 +36,7 @@ body {
     background-color: rgba(120, 120, 120, 0.7);
 }
 
-.hero h1 {
+.title h1 {
     font-family: 'Crete Round';
     text-align: center;
     width: 100vw;
@@ -45,8 +47,12 @@ body {
     color: #fff;
 }
 
-.hero h2 {
+.title h2 {
     font-size: 1.5em;
     color: #fff;  
 }
+/* Clear float when working on body paragraphs */
 
+main {
+    clear: both;
+}
