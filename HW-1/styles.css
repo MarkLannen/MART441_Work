@@ -1,9 +1,33 @@
+
 body {
-    font-family: 'Raleway';font-size: 22px;
-    color: #003cff;
+    margin: 0;
+    font-family: 'Raleway';
+    font-size: 18px;
+    color: #333;
 }
 
-h1 {
-    font-family: 'Crete Round';font-size: 32px;
-    color: #ff0000;
+.hero {
+    background-image: url(img/AspenDawn_1500px.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, .8); */
 }
+
+.hero h1 {
+    font-family: 'Crete Round';
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    /* margin-top: 50%; */
+    margin-bottom: .5em;
+    font-size: 3em;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    color: #fff;  
+}
+
