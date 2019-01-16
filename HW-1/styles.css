@@ -14,7 +14,8 @@ body {
 
 .hero {
     background-image: url("img/AspenDawn_1500px.jpg");
-    min-height: 700px;    
+    height: 100vh;
+    min-height: 200px;    
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -23,12 +24,11 @@ body {
 }
 
 .hero .title {
-    
-    margin-top: 150px;
-    max-width: 75%;
     color: #fff;
     float: right;
-    margin-top: 170px;
+    margin-top: 150px;
+    max-width: 75%;
+    max-height: 60%;
     margin-left: 1em;
     margin-right: 1em;
     padding: 2em;
@@ -39,8 +39,7 @@ body {
 .title h1 {
     font-family: 'Crete Round';
     text-align: center;
-    width: 100vw;
-    height: 100vh;
+   
     /* margin-top: 50%; */
     margin-bottom: .5em;
     font-size: 3em;
