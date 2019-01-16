@@ -39,8 +39,6 @@ body {
 .title h1 {
     font-family: 'Crete Round';
     text-align: center;
-   
-    /* margin-top: 50%; */
     margin-bottom: .5em;
     font-size: 3em;
     color: #fff;
@@ -54,4 +52,12 @@ body {
 
 main {
     clear: both;
+}
+
+main .main-container{
+
+}
+
+main .main-content{
+    
 }
