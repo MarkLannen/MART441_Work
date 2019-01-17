@@ -94,7 +94,7 @@ body {
 }
 
 #nav-container {
-     
+
    }
 
 .nav-link {
@@ -107,7 +107,11 @@ body {
     padding: 20px;
     color: #000;
     text-align: center;
+}
 
+.nav-link:hover {
+    background-color: #4A7BFF; 
+    color: #fff
 }
 
 
