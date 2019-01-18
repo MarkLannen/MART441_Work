@@ -34,7 +34,7 @@ body {
 
 .hero {
     background-image: url("img/AspenDawn_1500px.jpg");
-    height: 100vh;
+    height: 150vh;
     min-height: 200px;    
     background-size: cover;
     background-position: left;
@@ -44,11 +44,11 @@ body {
 }
 
 @media screen and (min-width: 440px) {
-    .section-1 {
+    #section-1 {
         width: 45%;
         background-color: #00ff00;
     }
-    .section-2 {
+    #section-2 {
         width: 45%;
         background-color: #ff0000;
     }
