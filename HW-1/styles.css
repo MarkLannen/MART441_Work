@@ -54,6 +54,17 @@ body {
     }
 }
 
+@media screen and (min-width: 550px) {
+    .nav-link {
+        display: inline;
+        float: right;
+        margin: 15px;
+        
+    }
+
+
+}
+
 #section-1 {
     width: 100%;
     color: #fff;   
@@ -105,7 +116,7 @@ body {
     background-color: #fff;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 5px;
     color: #000;
     text-align: center;
 }
