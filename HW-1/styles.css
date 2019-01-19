@@ -31,20 +31,6 @@ body {
     
 }
 
-@media (min-width: 470px) {    
-    .nav-link {
-        /* display: inline-block; */
-        width: 250px;
-        margin: 0 auto;    
-        background-color: #0ff;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 20px;
-        text-align: center;    
-        color: #f00;
-    }
-}
-
 #hero-section-1 {
     width: 100%;
     /* margin: 0px auto 0px auto; */
@@ -89,7 +75,7 @@ body {
 .nav-link {
     display: block;
     width: 150px;
-    margin: 0 auto;    
+    margin: 0 0 auto;   
     background-color: #fff;
     margin-top: 20px;
     margin-bottom: 20px;
