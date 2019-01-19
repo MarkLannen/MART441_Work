@@ -27,8 +27,7 @@ body {
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(199, 23, 23, 0.8);
-    
+    background-color: rgba(199, 23, 23, 0.8);    
 }
 
 #hero-section-1 {
@@ -43,7 +42,7 @@ body {
     font-family: 'Indie Flower';
     text-align: center;
     margin-bottom: 20px;
-    font-size: 3em;
+    font-size: 2em;
     color: #fff;
 }
 
@@ -51,10 +50,10 @@ body {
 }
 #section-2 h1 {
     width: 100%;
-    font-family: 'Raleway';
+    font-family: 'Indie Flower';
     text-align: center;
     margin-bottom: 20px;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #fff;
     padding: 20px;
     background-color: rgba(120, 120, 120, 0.5);
@@ -68,14 +67,12 @@ body {
     height: 500px;
 }
 
-.nav-container {
-    
-   }
+.nav-container {   
+}
 
 .nav-link {
-    display: block;
     width: 150px;
-    margin: 0 0 auto;   
+    display: block;
     background-color: #fff;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -83,7 +80,7 @@ body {
     text-align: center;  
     font-size: 18px;  
     color: rgb(0, 0, 0);
-    }
+}
 
 .nav-link:hover {
     background-color: #4A7BFF;
@@ -108,4 +105,27 @@ li {
     margin-top: 20px;
     padding: 20px;
     color: #fff;
+}
+
+h2 {
+    font-family: 'Indie Flower'; 
+    font-size: 48px;   
+}
+
+@media (min-width: 550px) {
+    .header {
+        font-size: 28px;       
+    }
+}
+
+@media (min-width: 550px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 900px) {
+    .header {
+        font-size: 36px;       
+    }
 }
