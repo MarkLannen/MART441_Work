@@ -28,25 +28,23 @@ body {
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, .5); */
 }
 
-/* @media screen and (min-width: 440px) {
+ @media screen and (min-width: 440px) {
     #hero-section-1 {
-        width: 45%;
+        
         }
-    #hero-section-2 {
-        width: 45%;
-    }
-}
+    
+ }
 
-@media screen and (min-width: 550px) {
+/* @media screen and (min-width: 550px) {
     .nav-link {
         display: inline;
         float: right;
         margin: 15px;
     }
-} */
+}  */
 
 #hero-section-1 {
     width: 100%;
@@ -58,16 +56,6 @@ body {
     background-color: rgba(120, 120, 120, 0.7);
 }
 
-#section-2 {
-    width: 100%;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 2em;
-    text-align: center;
-    font-size: 1em;
-}
-
 #hero-section-1 h1 {
     font-family: 'Indie Flower';
     text-align: center;
@@ -76,14 +64,21 @@ body {
     color: #fff;
 }
 
+#section-2 {
+}
 #section-2 h1 {
+    width: 100%;
     font-family: 'Raleway';
     text-align: center;
     margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
     font-size: 1.5em;
     color: #fff;
+    padding: 20px;
+    background-color: rgba(120, 120, 120, 0.7);
+}
+
+#section-2-header {
+    width: 100%;
 }
 
 #bison-background {
@@ -110,7 +105,7 @@ li {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
-    
+    text-align: center;    
     color: #000;
     }
 
