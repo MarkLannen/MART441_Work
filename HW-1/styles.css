@@ -1,8 +1,5 @@
 
 body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
     background-image: url("img/2Bison-1500px.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -21,24 +18,22 @@ body {
     text-align: center;
 }
 
-.hero-section {
-    
+.hero-section {    
     background-image: url("img/WatertonRiver_1500px.jpg");
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     min-height: 200px;
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(120, 120, 120, .5);
     
 }
 
-@media only screen and (min-width: 470px) {
-    
+@media only screen and (min-width: 470px) {    
     .nav-link {
-        display: inline-block;
+        /* display: inline-block; */
         width: 150px;
         margin: 0 auto;    
         background-color: #0ff;
@@ -101,14 +96,7 @@ body {
     height: 500px;
 }
 
-a {
-    font-family: 'Raleway';
-    list-style: none;
-}
 
-li {
-    list-style: none;
-}
 
 .nav-container {
     
@@ -122,13 +110,23 @@ li {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
-    text-align: center;    
+    text-align: center;  
+    font-size: 18px;  
     color: #000;
     }
 
 .nav-link:hover {
     background-color: #4A7BFF;
     color: #fff
+}
+
+a {
+    font-family: 'Raleway';
+    list-style: none;
+}
+
+li {
+    list-style: none;
 }
 
  #info-container {
