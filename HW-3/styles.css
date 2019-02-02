@@ -6,7 +6,7 @@ html {
 
 body {
     margin: 0;
-    background-color: #FFF5C4;
+    background-color: rgb(170, 250, 210);
 }
 
 #header-container {
@@ -59,7 +59,26 @@ body {
     text-decoration: none;
     background-color: white; 
     padding: 15px 20px;
-    border-right: solid black 1px;
- 
+    border-right: solid black 1px; 
+}
+.link-1 {
+    border-left: solid black 1px; 
 }
 
+/* Main Content */
+
+.title-card {
+    width: 80%;
+    height: 200px;
+    background-color: rgba(59, 32, 0, 0.5);
+    margin: 50px auto;
+    color: white;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 48px;
+    padding: 20px 20px 60px 20px;
+    text-align: center;
+    line-height: 150%;
+    border-radius: 20%;
+    border: solid white 4px;
+    
+}
