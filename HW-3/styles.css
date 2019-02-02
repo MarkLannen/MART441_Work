@@ -15,17 +15,23 @@ body {
     font-family: 'Alegreya';
     background-color: #000;
     color: #fff;
-    padding: 10px 0px 10px 30px;
     text-align: center;    
 }
 
 #header-image {
     float: left;
+    margin: 15px 0px 15px 40px;
 }
 
-#header-text {    
-    display: inline-block; 
+#header-text {  
+    float: right;  
+    /* display: inline-block;  */
     font-size: 24px; 
+    text-align: center;
+    
+    margin-right: 100px;
+    margin-top: 40px;
+    
 }
 
 @media only screen and (min-width: 550px) {
@@ -43,17 +49,16 @@ body {
 }
 
 .top-nav-container {
-    width: 100%;
-    background-color: red; 
-    overflow: hidden;   
+    clear: both;
+    text-align: center;  
+    background-color: white;
 }
 
-.top-nav-link {
-    float: left;
+.top-nav-container a {
+    display: inline-block;
     text-decoration: none;
     background-color: white; 
-    padding: 10px;
-    width: 25%;
+    padding: 15px 20px;
     border-right: solid black 1px;
  
 }
