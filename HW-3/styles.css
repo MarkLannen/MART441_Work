@@ -74,11 +74,27 @@ body {
     margin: 10px auto;
     color: white;
     font-family: 'ZCOOL KuaiLe', cursive;
-    font-size: 36px;
+    font-size: 56px;
     padding: 0px 20px 10px 20px;
     text-align: center;
-    /* line-height: 140%; */
-    /* border-radius: 30%; */
-    border: solid white 4px;
-    
+    border-top: solid white 4px;   
+    border-bottom: solid white 4px;     
+}
+
+#choice-1 {
+    margin: 0 25px;
+    width: 75%;
+    background-color: rgba(59, 32, 0, 0.15);
+    font-family: 'Alegreya';
+    font-size: 26px;
+    color: #fff; 
+    overflow: hidden;
+    border-radius: 2%;
+    padding: 100 px;
+    /* border: solid #fff 2px;  */
+}
+
+#choice-1 img {
+    float: left;
+    margin: 0 25px 0 0;
 }
