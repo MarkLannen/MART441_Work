@@ -69,7 +69,7 @@ body {
 
 .title-card {
     width: 100%;
-    /* height: 100px; */
+    line-height: 140%;
     background-color: rgba(59, 32, 0, 0.5);
     margin: 10px auto;
     color: white;
@@ -97,4 +97,14 @@ body {
 #choice-1 img {
     float: left;
     margin: 0 25px 0 0;
+}
+
+.trailhead-section {
+    margin: 0 auto;
+}
+
+.trailhead {
+    display: inline-block;
+    margin: 0 auto;
+    float: left;
 }
