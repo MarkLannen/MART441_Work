@@ -1,16 +1,18 @@
 # Mark Lannen MART 441
-## HW-2 Readme
+## HW-3 Readme
 ### Process
 
-In terms of process there wasn't a lot for the homework this week as the project itself was relatively simple. As such I spent the vast majority of my time this week going through Modules 9,10 and 11 from the 341 site to review all of those critical aspects of web development.  
+I spent most of my MART 441 refreshing my knowledge of JavaScript. I went through the codecademy exercises and studied the chapters from Eloquent JS as well as the first few sections of 'You Don't Know JavaScript' up and going.
 
-I built a simple page with just a header that included an image and text. For practise I floated the image and set 2 breakpoints with media queires which resized the header text as the viewport expanded. I had difficulty with both of these processes last week so I'm pleased I was able to get them to work.
+I then built on the project from last week and focussed on adding a nav bar and the different sections. 
 
 ## Successes
 
-Getting an element to float correctly and 2 media queries to work. 
+I could remember most of the JavaScript we were responsible for learning, and what I didn't remember I was able to get back up to speed on. I also did a bit of extra practise writing a few simple loops and functions. 
 
 ## Difficulties
 
-I'm still getting a margin around an element that I've set to 100% width. I don't know what is causing it, but have emailed professor Cassens a question about it. 
+I'm still in need of much more practise with css. I ran out of time before I was able to style my page the way I wanted it, so I will spend as much time as I need to next week understanding how to get everything to look the way I want it to.
+
+Also, I am in a class that uses Python, and I can occasionally get the syntax of the two confused! I imagine that will be something I have to deal with regularly this semester.  :) 
 
