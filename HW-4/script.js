@@ -16,12 +16,12 @@ function getChoice1 () {
   }
   else if(userChoice === 'lake') 
   {
-    myQuestion.innerHTML = "A brave decision... you're in for a long day - check and make sure you have enough food and start walking!"
+    myQuestion.innerHTML = "A brave decision... you're in for a long day - check and make sure you have enough food before you start walking!"
     document.getElementById("choice").style.display="none";
     document.getElementById("btnSubmit").style.display="none"; 
 
-    document.getElementById("choice3").style.display="block";
-    document.getElementById("btnSubmit3").style.display="block"; 
+    document.getElementById("choice2").style.display="block";
+    document.getElementById("btnSubmit2").style.display="block"; 
   }
   else
   {
@@ -36,4 +36,3 @@ function getChoice1 () {
 //     myQuestion.innerHTML = 
 //   }
 
-}
