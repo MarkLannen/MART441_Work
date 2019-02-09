@@ -100,7 +100,7 @@ function getChoice4 () {
 
   if (stay_go_choice === 'ignore')
   {
-    document.getElementById("choice-image").src="img/hiking-500px.jpg";
+    document.getElementById("choice-image").src="img/hiking2-500px.jpg";
     myQuestion.innerHTML = "After a long day of hiking, you have finally arrived at a campsite. Are you going to get an early night, or do you want to stay up late and look at the stars?"
     document.getElementById("choice4").style.display="none";
     document.getElementById("btnSubmit4").style.display="none"; 
@@ -127,13 +127,13 @@ function getChoice4 () {
 }
 
 function getChoice5 () {
-  var stay_go_choice = document.getElementById("choice4").value;
+  var stay_go_choice = document.getElementById("choice5").value;
   var myQuestion = document.getElementById("story");
 
-  if (stay_go_choice === 'ignore')
+  if (stay_go_choice === 'sleep')
   {
-    document.getElementById("choice-image").src="img/hiking-500px.jpg";
-    myQuestion.innerHTML = "After a long day of hiking, you have finally arrived at a campsite. Are you going to get an early night, or do you want to stay up late and look at the stars?"
+    document.getElementById("choice-image").src="img/sleep-500px.jpg";
+    myQuestion.innerHTML = "Congratulations - you've survived your first day! Are you going home, or do you want to carry on with the adventure?"
     document.getElementById("choice5").style.display="none";
     document.getElementById("btnSubmit5").style.display="none"; 
 
@@ -141,15 +141,47 @@ function getChoice5 () {
     document.getElementById("btnSubmit6").style.display="block"; 
   }
 
-  else if(stay_go_choice ==='binoculars')
+  else if(stay_go_choice ==='stars')
   {
-    document.getElementById("choice-image").src="img/woodpecker-500px.jpg";
-    myQuestion.innerHTML = "After a long day of hiking, you have finally arrived at a campsite. Are you going to get an early night, or do you want to stay up late and look at the stars?" 
+    document.getElementById("choice-image").src="img/stars-500px.jpg";
+    myQuestion.innerHTML = "Congratulations - you've survived your first day! Are you going home, or do you want to carry on with the adventure?" 
     document.getElementById("choice5").style.display="none";
     document.getElementById("btnSubmit5").style.display="none"; 
 
     document.getElementById("choice6").style.display="block";
     document.getElementById("btnSubmit6").style.display="block"; 
+  }
+
+  else
+  {
+    myQuestion.innerHTML === "Please look a bit more closely at the options!"
+  }
+}
+
+function getChoice6 () {
+  var stay_go_choice = document.getElementById("choice6").value;
+  var myQuestion = document.getElementById("story");
+
+  if (stay_go_choice === 'return')
+  {
+    document.getElementById("choice-image").src="img/sleep-500px.jpg";
+    myQuestion.innerHTML = "Safe travels home!"
+    document.getElementById("choice6").style.display="none";
+    document.getElementById("btnSubmit6").style.display="none"; 
+
+    document.getElementById("choice7").style.display="block";
+    document.getElementById("btnSubmit7").style.display="block"; 
+  }
+
+  else if(stay_go_choice ==='stars')
+  {
+    document.getElementById("choice-image").src="img/stars-500px.jpg";
+    myQuestion.innerHTML = "Good for you!" 
+    document.getElementById("choice6").style.display="none";
+    document.getElementById("btnSubmit6").style.display="none"; 
+
+    document.getElementById("choice7").style.display="block";
+    document.getElementById("btnSubmit7").style.display="block"; 
   }
 
   else
