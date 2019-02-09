@@ -7,7 +7,7 @@ function getChoice1 () {
   if(userChoice === 'river') 
   {
     document.getElementById("choice-image").src="img/river-500px.jpg";
-    myQuestion.innerHTML = "Excellent Choice! You'll find a beautiful spot about 8 miles away. You've got all day to get there, so make sure you stop and take some pictures along the way. Now, who do you want to take the lead your or your friend?"
+    myQuestion.innerHTML = "Excellent Choice! You'll find a beautiful spot about 8 miles away. You've got all day to get there, so make sure you stop and take some pictures along the way. Now, who do you want to take the lead, or shoud you let your friend go first?"
     document.getElementById("choice").style.display="none";
     document.getElementById("btnSubmit").style.display="none"; 
 
@@ -17,7 +17,7 @@ function getChoice1 () {
   else if(userChoice === 'lake') 
   {
     document.getElementById("choice-image").src="img/lake-500px.jpg";
-    myQuestion.innerHTML = "A brave decision... you're in for a long day - check and make sure you have enough food before you start walking! Now, who do you want to take the lead your or your friend?"
+    myQuestion.innerHTML = "A brave decision... you're in for a long day - check and make sure you have enough food before you start walking! Now, who do you want to take the lead, or shoud you let your friend go first?"
     document.getElementById("choice").style.display="none";
     document.getElementById("btnSubmit").style.display="none"; 
 
@@ -34,10 +34,10 @@ function getChoice2 () {
   var leader_choice = document.getElementById("choice2").value;
   var myQuestion = document.getElementById("story");
 
-  if (leader_choice = 'you')
+  if (leader_choice === 'you')
   {
     document.getElementById("choice-image").src="img/bear-500px.jpg";
-    myQuestion.innerHTML = "Make noise and keep an eye out for bears!"
+    myQuestion.innerHTML = "Make noise and keep an eye out for bears! Now, do you want to eat before you start hiking?"
     document.getElementById("choice2").style.display="none";
     document.getElementById("btnSubmit2").style.display="none"; 
 
@@ -45,14 +45,53 @@ function getChoice2 () {
     document.getElementById("btnSubmit3").style.display="block"; 
   }
 
-  if (leader_choice = 'friend')
+  else if(leader_choice ==='friend')
   {
     document.getElementById("choice-image").src="img/bear-500px.jpg";
-    myQuestion.innerHTML = "Remind your friend to make noise and keep an eye out for bears!" 
+    myQuestion.innerHTML = "Remind your friend to make noise and keep an eye out for bears! Now, do you want to eat before you start hiking?" 
     document.getElementById("choice2").style.display="none";
     document.getElementById("btnSubmit2").style.display="none"; 
 
     document.getElementById("choice3").style.display="block";
     document.getElementById("btnSubmit3").style.display="block"; 
+  }
+
+  else
+  {
+    myQuestion.innerHTML === "Please look a bit more closely at the options!"
   }
 }
+
+function getChoice3 () {
+  var stay_go_choice = document.getElementById("choice3").value;
+  var myQuestion = document.getElementById("story");
+
+  if (stay_go_choice === 'eat')
+  {
+    document.getElementById("choice-image").src="img/bear-500px.jpg";
+    myQuestion.innerHTML = "Light up the stove and break out the dehydrated meal! ?"
+    document.getElementById("choice3").style.display="none";
+    document.getElementById("btnSubmit3").style.display="none"; 
+
+    document.getElementById("choice4").style.display="block";
+    document.getElementById("btnSubmit4").style.display="block"; 
+  }
+
+  else if(stay_go_choice ==='walk')
+  {
+    document.getElementById("choice-image").src="img/bear-500px.jpg";
+    myQuestion.innerHTML = "Lace up your boots, adjust your pack and start walking!?" 
+    document.getElementById("choice3").style.display="none";
+    document.getElementById("btnSubmit3").style.display="none"; 
+
+    document.getElementById("choice4").style.display="block";
+    document.getElementById("btnSubmit4").style.display="block"; 
+  }
+
+  else
+  {
+    myQuestion.innerHTML === "Please look a bit more closely at the options!"
+  }
+}
+
+
