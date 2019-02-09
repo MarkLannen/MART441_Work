@@ -7,6 +7,7 @@ function getChoice1 () {
   console.log(userChoice);
 
   if(userChoice === 'river') {
+    document.getElementById("choice-image").src="img/river-500px.jpg";
     myQuestion.innerHTML = "Excellent Choice! You'll find a beautiful spot about 8 miles away. You've got all day to get there, so make sure you stop and take some pictures along the way."
     document.getElementById("choice").style.display="none";
     document.getElementById("btnSubmit").style.display="none"; 
@@ -16,6 +17,7 @@ function getChoice1 () {
   }
   else if(userChoice === 'lake') 
   {
+    document.getElementById("choice-image").src="img/lake-500px.jpg";
     myQuestion.innerHTML = "A brave decision... you're in for a long day - check and make sure you have enough food before you start walking!"
     document.getElementById("choice").style.display="none";
     document.getElementById("btnSubmit").style.display="none"; 
@@ -35,4 +37,4 @@ function getChoice1 () {
 //   if (camp_choice === 'river') {
 //     myQuestion.innerHTML = 
 //   }
-
+// }
