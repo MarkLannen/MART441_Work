@@ -68,8 +68,8 @@ function getChoice3 () {
 
   if (stay_go_choice === 'eat')
   {
-    document.getElementById("choice-image").src="img/bear-500px.jpg";
-    myQuestion.innerHTML = "Light up the stove and break out the dehydrated meal! ?"
+    document.getElementById("choice-image").src="img/woodpecker-500px.jpg";
+    myQuestion.innerHTML = "Light up the stove and break out the dehydrated meal! After you have eaten, finally started and walked for a few miles, you see a large woodpecker perched on a near by tree. Do you keep on walking or break out the binoculars and try to identify it?"
     document.getElementById("choice3").style.display="none";
     document.getElementById("btnSubmit3").style.display="none"; 
 
@@ -79,8 +79,8 @@ function getChoice3 () {
 
   else if(stay_go_choice ==='walk')
   {
-    document.getElementById("choice-image").src="img/bear-500px.jpg";
-    myQuestion.innerHTML = "Lace up your boots, adjust your pack and start walking!?" 
+    document.getElementById("choice-image").src="img/woodpecker-500px.jpg";
+    myQuestion.innerHTML = "Lace up your boots, adjust your pack and start walking!After you have walked for a few miles, you see a large woodpecker perched on a near by tree. Do you keep on walking or break out the binoculars and try to identify it?" 
     document.getElementById("choice3").style.display="none";
     document.getElementById("btnSubmit3").style.display="none"; 
 
