@@ -81,6 +81,19 @@ body {
     border-bottom: solid white 4px;     
 }
 
+.story-intro {
+    width: 80%;    
+    background-color: rgba(255, 255, 255);
+    margin: 10px auto;
+    color: #000;
+    font-family: 'Alegreya';
+    font-size: 18px;
+    padding: 0px 20px 10px 20px;
+    text-align: center;
+    border: solidrgba(59, 32, 0, 0.15);   
+      
+}
+
 #choice-1 {
     margin-left: 25px;
     margin-bottom: 25px;
