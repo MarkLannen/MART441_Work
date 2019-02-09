@@ -94,4 +94,36 @@ function getChoice3 () {
   }
 }
 
+function getChoice4 () {
+  var stay_go_choice = document.getElementById("choice4").value;
+  var myQuestion = document.getElementById("story");
+
+  if (stay_go_choice === 'eat')
+  {
+    document.getElementById("choice-image").src="img/woodpecker-500px.jpg";
+    myQuestion.innerHTML = "After a long day of hiking, you have finally arrived at a campsite.?"
+    document.getElementById("choice4").style.display="none";
+    document.getElementById("btnSubmit4").style.display="none"; 
+
+    document.getElementById("choice5").style.display="block";
+    document.getElementById("btnSubmit5").style.display="block"; 
+  }
+
+  else if(stay_go_choice ==='walk')
+  {
+    document.getElementById("choice-image").src="img/woodpecker-500px.jpg";
+    myQuestion.innerHTML = "After a long day of hiking, you have finally arrived at a campsite.?" 
+    document.getElementById("choice4").style.display="none";
+    document.getElementById("btnSubmit4").style.display="none"; 
+
+    document.getElementById("choice5").style.display="block";
+    document.getElementById("btnSubmit5").style.display="block"; 
+  }
+
+  else
+  {
+    myQuestion.innerHTML === "Please look a bit more closely at the options!"
+  }
+}
+
 
