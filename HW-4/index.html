@@ -30,22 +30,21 @@
                 <p>Choose Your Own Adventure through <br>the Bob Marshall Wilderness!</p>
             </div>
 
-            <div class="story-intro">
+            <div id="story">
                 <p>It's summer in Montanan and you've got a week off from work, 2 old friends have come to see you in Montana
                     to visit and they want you to take them out in to the Wilderness.</p>
                 <p>You decide to take them to the Bob Marshall and show them something really wild!</p>
-
+                <p>The first choice to make is which trailhead you want to start from.</p>
             </div>
 
-            
-            <section class="trailhead-section">
+            <section class="story-selection">
                 <div><label id="choice-text">Choice #1. Which trailhead will<br> you use to enter the wilderness?</label><br>
-                    <input id="txt-input" type="text"><br>
-                    <button id="btnSubmit" type="submit">Submit</button><br>
+                    <input id="choice" type="text" value="Please enter 'Swan' or 'Benchmark'"></input><br>
+                    <button id="btnSubmit" onclick="getChoice1();">Submit</button><br>
                 </div>
                 <div class="trailhead">
                         <img src="img/swan-entrance.jpg" alt="view of mountain valley from pass">
-                        <p class="choice-1-description">Swan Valley</p>
+                        <p class="choice-1-description">Swan</p>
                 </div>
                 
                 <div class="trailhead">

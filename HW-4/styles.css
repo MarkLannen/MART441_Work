@@ -81,16 +81,16 @@ body {
     border-bottom: solid white 4px;     
 }
 
-.story-intro {
+#story{
     width: 80%;    
     background-color: rgba(255, 255, 255);
     margin: 10px auto;
     color: #000;
     font-family: 'Alegreya';
-    font-size: 18px;
-    padding: 0px 20px 10px 20px;
+    font-size: 22px;
+    padding: 20px;
     text-align: center;
-    border: solidrgba(59, 32, 0, 0.15);   
+    border: solidrgba(59, 32, 0);   
       
 }
 
@@ -100,7 +100,7 @@ body {
     width: 70%;
     background-color: rgba(59, 32, 0, 0.15);
     font-family: 'Alegreya';
-    font-size: 26px;
+    font-size: 20px;
     color: #fff; 
     overflow: hidden;
     border-radius: 2%;
@@ -112,14 +112,14 @@ body {
     margin: 0 25px 0 0;
 }
 
-.trailhead-section {
+.story-selection {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
     font-family: 'Alegreya';
-    font-size: 24px; 
+    font-size: 22px; 
     /* margin: 0 auto; */
 } 
 
@@ -140,7 +140,7 @@ input[type=text]{
     margin: 10px 0;
     border: 2px solid rgba(59, 32, 0, 0.15);
     border-radius: 4px;
-    font-size: 1.2em;
+    font-size: .7em;
 }
 
 button {
@@ -148,7 +148,7 @@ button {
     background:#ff; 
     border:0 none;
     border-radius: 5px; 
-    font-size: 1em;
+    font-size: .8em;
     border: 2px solid rgba(59, 32, 0, 0.15);
 }
 

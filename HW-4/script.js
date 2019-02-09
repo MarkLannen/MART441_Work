@@ -14,3 +14,24 @@ else if (season === 'winter') {
 } else {
   console.log('Invalid season.');
 }
+
+function getChoice1 () {
+  var userChoice = document.getElementById("choice").value;
+  var myQuestion = document.getElementById("story");
+
+  console.log(userChoice);
+
+  if(userChoice === 'Swan') {
+    myQuestion.innerHTML = "Excellent Choice!"
+
+  }
+  else if(userChoice === 'Benchmark') 
+  {
+    myQuestion.innerHTML = "A brave decision.."
+
+  }
+  else
+  {
+    myQuestion.innerHTML = "Please look a bit more closely at the options!"
+  }
+}
