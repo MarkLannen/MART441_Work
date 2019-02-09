@@ -113,8 +113,8 @@ body {
     font-size: 22px; 
 } 
 
-#choice{ 
-    width: 100%;
+#choice, #choice2, #choice3, #choice4, #choice5 { 
+    width: 300px;
     /* margin-right: 200px; */
     
   
