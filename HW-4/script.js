@@ -182,7 +182,7 @@ function getChoice6 () {
     document.getElementById("btnSubmit7").style.display="block"; 
   }
 
-  else if(stay_go_choice ==='stars')
+  else if(stay_go_choice ==='continue')
   {
     document.body.style.backgroundColor = "NavajoWhite ";
     document.getElementById("choice-image").src="img/continue-500px.jpg";
