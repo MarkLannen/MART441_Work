@@ -164,7 +164,7 @@ function getChoice6 () {
 
   if (stay_go_choice === 'return')
   {
-    document.getElementById("choice-image").src="img/sleep-500px.jpg";
+    document.getElementById("choice-image").src="img/car-500px.jpg";
     myQuestion.innerHTML = "Safe travels home!"
     document.getElementById("choice6").style.display="none";
     document.getElementById("btnSubmit6").style.display="none"; 
@@ -175,7 +175,7 @@ function getChoice6 () {
 
   else if(stay_go_choice ==='stars')
   {
-    document.getElementById("choice-image").src="img/stars-500px.jpg";
+    document.getElementById("choice-image").src="img/continue-500px.jpg";
     myQuestion.innerHTML = "Good for you!" 
     document.getElementById("choice6").style.display="none";
     document.getElementById("btnSubmit6").style.display="none"; 
