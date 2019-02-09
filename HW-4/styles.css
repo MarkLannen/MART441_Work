@@ -114,12 +114,9 @@ body {
 } 
 
 #choice, #choice2, #choice3, #choice4, #choice5 { 
-    width: 300px;
-    /* margin-right: 200px; */
+    width: 150%;
     
-  
-} 
-
+}
 
 .trailhead img {
     display: inline-block;

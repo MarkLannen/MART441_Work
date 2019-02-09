@@ -36,6 +36,7 @@ function getChoice2 () {
 
   if (leader_choice = 'you')
   {
+    document.getElementById("choice-image").src="img/bear-500px.jpg";
     myQuestion.innerHTML = "Make noise and keep an eye out for bears!"
     document.getElementById("choice2").style.display="none";
     document.getElementById("btnSubmit2").style.display="none"; 
@@ -46,6 +47,7 @@ function getChoice2 () {
 
   if (leader_choice = 'friend')
   {
+    document.getElementById("choice-image").src="img/bear-500px.jpg";
     myQuestion.innerHTML = "Remind your friend to make noise and keep an eye out for bears!" 
     document.getElementById("choice2").style.display="none";
     document.getElementById("btnSubmit2").style.display="none"; 
