@@ -36,6 +36,7 @@ function getChoice2 () {
 
   if (leader_choice === 'you')
   {
+    document.body.style.backgroundColor = "red";
     document.getElementById("choice-image").src="img/bear-500px.jpg";
     myQuestion.innerHTML = "Make noise and keep an eye out for bears! Now, do you want to eat before you start hiking?"
     document.getElementById("choice2").style.display="none";
@@ -47,6 +48,7 @@ function getChoice2 () {
 
   else if(leader_choice ==='friend')
   {
+    document.body.style.backgroundColor = "red";
     document.getElementById("choice-image").src="img/bear-500px.jpg";
     myQuestion.innerHTML = "Remind your friend to make noise and keep an eye out for bears! Now, do you want to eat before you start hiking?" 
     document.getElementById("choice2").style.display="none";
@@ -68,6 +70,7 @@ function getChoice3 () {
 
   if (stay_go_choice === 'eat')
   {
+    document.body.style.backgroundColor = "brown";
     document.getElementById("choice-image").src="img/food-500px.jpg";
     myQuestion.innerHTML = "Light up the stove and break out the dehydrated meal! After you have eaten, finally started and walked for a few miles, you see a large woodpecker perched on a near by tree. Do you keep on walking or break out the binoculars and try to identify it?"
     document.getElementById("choice3").style.display="none";
@@ -79,6 +82,7 @@ function getChoice3 () {
 
   else if(stay_go_choice ==='walk')
   {
+    document.body.style.backgroundColor = "brown";
     document.getElementById("choice-image").src="img/hiking-500px.jpg";
     myQuestion.innerHTML = "Lace up your boots, adjust your pack and start walking!After you have walked for a few miles, you see a large woodpecker perched on a near by tree. Do you keep on walking or break out the binoculars and try to identify it?" 
     document.getElementById("choice3").style.display="none";
@@ -100,6 +104,7 @@ function getChoice4 () {
 
   if (stay_go_choice === 'ignore')
   {
+    document.body.style.backgroundColor = "DeepSkyBlue";
     document.getElementById("choice-image").src="img/hiking2-500px.jpg";
     myQuestion.innerHTML = "After a long day of hiking, you have finally arrived at a campsite. Are you going to get an early night, or do you want to stay up late and look at the stars?"
     document.getElementById("choice4").style.display="none";
@@ -111,6 +116,7 @@ function getChoice4 () {
 
   else if(stay_go_choice ==='binoculars')
   {
+    document.body.style.backgroundColor = "DeepSkyBlue";
     document.getElementById("choice-image").src="img/woodpecker-500px.jpg";
     myQuestion.innerHTML = "After a long day of hiking, you have finally arrived at a campsite. Are you going to get an early night, or do you want to stay up late and look at the stars?" 
     document.getElementById("choice4").style.display="none";
@@ -132,6 +138,7 @@ function getChoice5 () {
 
   if (stay_go_choice === 'sleep')
   {
+    document.body.style.backgroundColor = "MidnightBlue ";
     document.getElementById("choice-image").src="img/sleep-500px.jpg";
     myQuestion.innerHTML = "Congratulations - you've survived your first day! Are you going home, or do you want to carry on with the adventure?"
     document.getElementById("choice5").style.display="none";
@@ -143,6 +150,7 @@ function getChoice5 () {
 
   else if(stay_go_choice ==='stars')
   {
+    document.body.style.backgroundColor = "MidnightBlue ";
     document.getElementById("choice-image").src="img/stars-500px.jpg";
     myQuestion.innerHTML = "Congratulations - you've survived your first day! Are you going home, or do you want to carry on with the adventure?" 
     document.getElementById("choice5").style.display="none";
@@ -164,6 +172,7 @@ function getChoice6 () {
 
   if (stay_go_choice === 'return')
   {
+    document.body.style.backgroundColor = "NavajoWhite ";
     document.getElementById("choice-image").src="img/car-500px.jpg";
     myQuestion.innerHTML = "Safe travels home!"
     document.getElementById("choice6").style.display="none";
@@ -175,6 +184,7 @@ function getChoice6 () {
 
   else if(stay_go_choice ==='stars')
   {
+    document.body.style.backgroundColor = "NavajoWhite ";
     document.getElementById("choice-image").src="img/continue-500px.jpg";
     myQuestion.innerHTML = "Good for you!" 
     document.getElementById("choice6").style.display="none";
