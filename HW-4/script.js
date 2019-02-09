@@ -1,19 +1,4 @@
-console.log("My 3 favorite restaurants are: 5 on Black, Caffe Dolce and Masala.")
-console.log("My 3 favorite snackfoods are: avacado on toast, popcorn and cheese on toast.")
-console.log("My 3 favorite fruits/vegatables are: huckleberries, kale and grapes.")
 
-let season = 'summer';
-
-if (season === 'spring') {
-  console.log('It\'s spring! The trees are budding!');
-}
-
-else if (season === 'winter') {
-   console.log('It\'s winter! Everything is covered in snow.');
-
-} else {
-  console.log('Invalid season.');
-}
 
 function getChoice1 () {
   var userChoice = document.getElementById("choice").value;
@@ -21,17 +6,30 @@ function getChoice1 () {
 
   console.log(userChoice);
 
-  if(userChoice === 'Swan') {
-    myQuestion.innerHTML = "Excellent Choice!"
+  if(userChoice === 'river') {
+    myQuestion.innerHTML = "Excellent Choice! You'll find a beautiful spot about 8 miles away. You've got all day to get there, so do you want to start walking now or eat some food first?"
+    document.getElementById("choice").style.display="none";
+    document.getElementById("btnSubmit").style.display="none"; 
 
+    document.getElementById("choice2").style.display="block";
+    document.getElementById("btnSubmit2").style.display="block"; 
   }
-  else if(userChoice === 'Benchmark') 
+  else if(userChoice === 'lake') 
   {
-    myQuestion.innerHTML = "A brave decision.."
+    myQuestion.innerHTML = "A brave decision... you're in for a long day - check and make sure you have enough food and start walking! Who's going to take the lead? You or your friend?"
+    document.getElementById("choice").style.display="none";
+    document.getElementById("btnSubmit").style.display="none"; 
 
+    document.getElementById("choice3").style.display="block";
+    document.getElementById("btnSubmit3").style.display="block"; 
   }
   else
   {
     myQuestion.innerHTML = "Please look a bit more closely at the options!"
   }
+}
+
+function getChoice2 () {
+  // var camp_choice = document.getElementById("choice2").value;
+
 }

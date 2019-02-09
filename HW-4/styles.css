@@ -94,23 +94,14 @@ body {
       
 }
 
-#choice-1 {
-    margin-left: 25px;
-    margin-bottom: 25px;
-    width: 70%;
-    background-color: rgba(59, 32, 0, 0.15);
-    font-family: 'Alegreya';
-    font-size: 20px;
-    color: #fff; 
-    overflow: hidden;
-    border-radius: 2%;
-    padding: 0;
+#choice-1-description {
+   
 }
 
-#choice-1 img {
-    float: left;
-    margin: 0 25px 0 0;
+#choice-2-description {
+   
 }
+
 
 .story-selection {
     display: flex;
@@ -120,7 +111,13 @@ body {
     flex-wrap: wrap;
     font-family: 'Alegreya';
     font-size: 22px; 
-    /* margin: 0 auto; */
+} 
+
+#choice{ 
+    width: 100%;
+    /* margin-right: 200px; */
+    
+  
 } 
 
 

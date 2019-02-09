@@ -33,25 +33,34 @@
             <div id="story">
                 <p>It's summer in Montanan and you've got a week off from work, 2 old friends have come to see you in Montana
                     to visit and they want you to take them out in to the Wilderness.</p>
-                <p>You decide to take them to the Bob Marshall and show them something really wild!</p>
-                <p>The first choice to make is which trailhead you want to start from.</p>
+                <p>You decide to take them to the Bob Marshall and enter at the Benchmark trailhead. This will show them something really wild!</p>
+                <p>At the trailhead, you load up your gear and look at the map.</p>
+                <p><strong>Do you and your crew want to camp along the Sun River or make it all the way to a hiden lake?</strong></p>
+                
             </div>
 
             <section class="story-selection">
-                <div><label id="choice-text">Choice #1. Which trailhead will<br> you use to enter the wilderness?</label><br>
-                    <input id="choice" type="text" value="Please enter 'Swan' or 'Benchmark'"></input><br>
+                <div>
+                    
+                    <input id="choice" type="text" value="Choose 'river' or 'lake'"></input><br>
                     <button id="btnSubmit" onclick="getChoice1();">Submit</button><br>
-                </div>
-                <div class="trailhead">
-                        <img src="img/swan-entrance.jpg" alt="view of mountain valley from pass">
-                        <p class="choice-1-description">Swan</p>
+
+                    <input id="choice2" type="text" value="Choose 'walk' or 'eat'" style="display: none"></input><br>
+                    <button id="btnSubmit2" onclick="getChoice2();" style="display: none">Submit</button><br>
+
+                    <input id="choice3" type="text" value="Choose 'you' or 'friend'" style="display: none"></input><br>
+                    <button id="btnSubmit3" onclick="getChoice3();" style="display: none">Submit</button><br>
+
+
                 </div>
                 
+                
                 <div class="trailhead">
-                        <img src="img/benchmark-entrance.jpg" alt="view of mountain valley from pass">
-                        <p class="choice-1-description">Benchmark</p>
+                        <img src="img/benchmark-entrance-500px.jpg" id = "choice-image">
+                        
                 </div>
             </section>
+            
         </main>
              
         <script src="script.js"></script>      
