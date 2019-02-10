@@ -178,8 +178,8 @@ function getChoice6 () {
     document.getElementById("choice6").style.display="none";
     document.getElementById("btnSubmit6").style.display="none"; 
 
-    document.getElementById("choice7").style.display="block";
-    document.getElementById("btnSubmit7").style.display="block"; 
+    // document.getElementById("choice7").style.display="block";
+    // document.getElementById("btnSubmit7").style.display="block"; 
   }
 
   else if(stay_go_choice ==='continue')
@@ -190,8 +190,8 @@ function getChoice6 () {
     document.getElementById("choice6").style.display="none";
     document.getElementById("btnSubmit6").style.display="none"; 
 
-    document.getElementById("choice7").style.display="block";
-    document.getElementById("btnSubmit7").style.display="block"; 
+    // document.getElementById("choice7").style.display="block";
+    // document.getElementById("btnSubmit7").style.display="block"; 
   }
 
   else

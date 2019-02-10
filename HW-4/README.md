@@ -1,18 +1,18 @@
 # Mark Lannen MART 441
-## HW-3 Readme
+## HW-4 Readme
 ### Process
 
-I spent most of my MART 441 refreshing my knowledge of JavaScript. I went through the codecademy exercises and studied the chapters from Eloquent JS as well as the first few sections of 'You Don't Know JavaScript' up and going.
+This was a very involved proces as all of the DOM manipulation is pretty new to me. Thank you 
+for creating the instructional video! I would have really struggled to get going if I had not
+had that as a reference.
 
-I then built on the project from last week and focussed on adding a nav bar and the different sections. 
+At first I thought we were meant to make 2 subsequent choices for every choice, which would have meant I think 32 functions! I started down that path but the code got very complicated very quickly and I'm glad I realized that was not what you were after.
 
 ## Successes
 
-I could remember most of the JavaScript we were responsible for learning, and what I didn't remember I was able to get back up to speed on. I also did a bit of extra practise writing a few simple loops and functions. 
+I got everything to work the way I wanted to and managed to change pictures, colors and body copy. 
 
 ## Difficulties
 
-I'm still in need of much more practise with css. I ran out of time before I was able to style my page the way I wanted it, so I will spend as much time as I need to next week understanding how to get everything to look the way I want it to.
-
-Also, I am in a class that uses Python, and I can occasionally get the syntax of the two confused! I imagine that will be something I have to deal with regularly this semester.  :) 
+The only difficulty that I wasn't able to eventually solve was that my text box and submit button are still displaying on the last step where there ar no choices. As far as I can tell they should be hidden. Will have to look at that and maybe see what is going wrong tomorrow.
 
