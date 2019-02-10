@@ -10,7 +10,7 @@ At first I thought we were meant to make 2 subsequent choices for every choice, 
 
 ## Successes
 
-I got everything to work the way I wanted to and managed to change pictures, colors and body copy. 
+I got most everything to work the way I wanted to and managed to change pictures, colors and body copy. 
 
 ## Difficulties
 
