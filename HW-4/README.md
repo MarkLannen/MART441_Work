@@ -14,5 +14,7 @@ I got everything to work the way I wanted to and managed to change pictures, col
 
 ## Difficulties
 
-The only difficulty that I wasn't able to eventually solve was that my text box and submit button are still displaying on the last step where there ar no choices. As far as I can tell they should be hidden. Will have to look at that and maybe see what is going wrong tomorrow.
+One difficulty was that my text box and submit button are still displaying on the last step where there are no choices. As far as I can tell they should be hidden. Will have to look at that and maybe see what is going wrong tomorrow.
+
+Also, my else statements past the first choice are not working. If I type gibberish in to the text box I don't get the message that I should. 
 
