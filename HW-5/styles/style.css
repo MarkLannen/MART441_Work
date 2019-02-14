@@ -1,3 +1,20 @@
 body {
-    background-color:  #e7e7e7;
+    background-color: #e7e7e7;
+}
+
+.tableBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.tableCell{
+    margin: 25px 0;
+}
+
+h1 {
+    margin-bottom: 50px;
 }
