@@ -6,18 +6,17 @@
         <script>
             function printArray()
             {
-                var friends = "George,Grace,Ella,John,Meghan,Ben";
-                var separateFriends = friends.split(",");
-                var allFriends = "";
-                for(var i = 0; i < separateFriends.length; i++)
+                var ages = new Array(3, 5, 0, 9);
+                var sumOfAges = 0;
+                for(var i = 0; i < ages.length; i++)
                 {
-                    allFriends += separateFriends[i] + "<br>";
+                    sumOfAges += ages[i];
                 }
-                document.getElementById("myFriends").innerHTML = allFriends;
+                document.getElementById("myAges").innerHTML = sumOfAges;
             }        
         </script>
     </head>
     <body onload="printArray();">
-        <div id="myFriends"></div>
+        <div id="myAges"></div>
     </body>
 </html>
