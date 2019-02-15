@@ -33,7 +33,7 @@ function createHiddenImageArray() {
     var hiddenImagePath = ["img/city.jpg", "img/desert.jpg", "img/forest.jpg", "img/mountains.jpg", "img/ocean.jpg"]
     
     // create another array to make sure the images only get added twice
-    var count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    var count = [0, 0, 0, 0, 0];
 
     // create a while statement to check to see if our hidden image array is full
     while(hiddenImages.length < 10) 
@@ -52,11 +52,8 @@ function createHiddenImageArray() {
     }
 }
 
-function flipImage(number)
-{
+function flipImage(number) {
     document.getElementById(startImage[number]).src= hiddenImages[number];
         // this should be a quick function that just changes
         // the image based on what number was pressed
-        
-    
 }
