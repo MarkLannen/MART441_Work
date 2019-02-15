@@ -1,6 +1,6 @@
 var startImage = ["image1", "image2", "image3", "image4", "image5", "image6","image7", "image8", "image9", "image10", "image11", "image12"];
 
-var startImagePath = 'img/blank-image.jpg';
+var startImagePath = 'img/hidden-image.jpg';
 
 /* addStartCard function populates array with 'blank image.'*/
 function addStartCard() {
