@@ -1,12 +1,5 @@
+// Code (with only a few minor changes) is taken from Professor Cassen's example for homework 5
 
-// var startImageArray = [];
-
-// function addStartImageArray() {
-//     for (var i = 0; i < startImage.length; i ++) {
-//         startImageArray.add[i];
-//         console.log(startImageArray);
-//     }
-// }
 
 // addStartImageArray();
 
