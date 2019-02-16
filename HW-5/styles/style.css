@@ -3,15 +3,6 @@ body {
     margin: 0 auto;
 }
 
-/* .tableBody {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-} */
-
 .mainTable{
     display: flex;
     flex-direction: row;
@@ -20,10 +11,6 @@ body {
     align-items: flex-start;
     align-content: flex-start;
 }
-
-/* .tableCell{
-    margin: 25px 25px;
-} */
 
 h1 {
     margin-bottom: 50px;
