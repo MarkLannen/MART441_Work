@@ -46,7 +46,10 @@ h2 {
 
 .tableCell {
     margin: 25px;
+}
 
+.tableCell:hover{
+    border: 5px solid #9193FF;
 }
 
 h1 {
