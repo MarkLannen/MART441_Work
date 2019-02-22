@@ -49,28 +49,35 @@ h3 {
     border: 5px solid #9193FF;
 }
 
+.mainTable-display {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
 .first-name {
     margin-left: 25px;
     float: left;
-}
-
-.player-info{
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 #name-input {
     margin-left: 25px;
-    margin-top: 31px;
+    margin-top: 45px;
 }
 
-.last-name {
+/* .last-name {
     clear: left;
     margin-left: 25px;
     float: left;
+    margin-top: -20px;
 }
 
 #last-name-input {
     margin-left: 25px;
-    margin-top: 56px;
+    margin-top: 36px;
 
-}
+}   */
