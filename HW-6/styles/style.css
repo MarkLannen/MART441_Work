@@ -4,10 +4,11 @@ body {
 }
 
 h1 {
-    /* padding-bottom: -20px;
-    padding-bottom: -20px; */
-    /* padding: 0;
-    border: 0; */
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
     vertical-align: baseline;
     font-family: 'Volkhov', serif;
     font-size: 34px;
@@ -18,21 +19,16 @@ header {
     margin: 0;
 }
 
-h1 {
-    font-size: 36px;
-    color: white;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-    /* max-width: 50%; */
-    /* padding: 15px; */
-}
-
 h2 {
     font-family: 'Lobster', cursive;
     font-size: 98px;
     color: #333;
     text-align: center;
+}
+
+h3 {
+    font-family: 'Volkhov', serif; 
+    font-size: 2em;
 }
 
 .mainTable{
