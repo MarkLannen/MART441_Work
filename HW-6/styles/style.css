@@ -45,14 +45,12 @@ h3 {
     margin: 25px;
 }
 
-.tableCell:hover{
-    border: 5px solid #9193FF;
+.tableCell:hover {
+    border: 3px solid #9193FF;
 }
-
 .mainTable-display {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-around; */
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start;
