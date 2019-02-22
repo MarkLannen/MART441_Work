@@ -60,7 +60,7 @@ h3 {
 
 .first-name {
     margin-left: 25px;
-    float: left;
+    /* float: left; */
     font-size: 2em;
 }
 
@@ -69,15 +69,12 @@ h3 {
     margin-top: 45px;
 }
 
-/* .last-name {
-    clear: left;
-    margin-left: 25px;
-    float: left;
-    margin-top: -20px;
-}
+.last-name {  
+    font-size: 2em;
+    margin-left: 50px;  
+} 
 
 #last-name-input {
     margin-left: 25px;
-    margin-top: 36px;
-
-}   */
+    margin-top: 45px;
+}   
