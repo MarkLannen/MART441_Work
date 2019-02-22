@@ -7,6 +7,9 @@ var startImage = ["image1", "image2", "image3", "image4", "image5", "image6","im
 
 var startImagePath = 'img/reveal-image.jpg';
 
+// JSON declaration
+var player = {"firstName": "", "lastName":"", "age":""};
+
 var hiddenImages = [];
 
 /* addStartCard function populates array with 'blank image.'*/
@@ -49,4 +52,11 @@ function flipImage(number) {
     document.getElementById(startImage[number]).src= hiddenImages[number];
         // this should be a quick function that just changes
         // the image based on what number was pressed
+}
+
+// Add to the JSON fromt the textboxes
+function addToPlayer() {
+    var firstName = document.getElementById("name-input").value;
+    var lastName = document.getElementById("last-name-input").value;
+    var age = document.getElementById("age-input").value;
 }

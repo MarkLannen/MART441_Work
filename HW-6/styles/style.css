@@ -56,33 +56,33 @@ h3 {
     align-content: flex-start;
 }
 
-.first-name {
+#first-name {
     margin-left: 25px;
     /* float: left; */
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 #name-input {
     margin-left: 25px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .last-name {  
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-left: 50px;  
 } 
 
 #last-name-input {
     margin-left: 25px;
-    margin-top: 30px;
+    margin-top: 20px;
 }  
 
 .age {  
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-left: 50px;  
 } 
 
 #age-input {
     margin-left: 25px;
-    margin-top: 30px;
+    margin-top: 20px;
 }  
