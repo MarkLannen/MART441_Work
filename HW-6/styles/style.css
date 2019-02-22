@@ -50,17 +50,27 @@ h3 {
 }
 
 .first-name {
-    text-align: left;
     margin-left: 25px;
-    margin-bottom: -20px;
+    float: left;
 }
 
 .player-info{
-    text-align: left;
     font-size: 1.5em;
 }
 
 #name-input {
     margin-left: 25px;
+    margin-top: 31px;
+}
+
+.last-name {
+    clear: left;
+    margin-left: 25px;
     float: left;
+}
+
+#last-name-input {
+    margin-left: 25px;
+    margin-top: 56px;
+
 }
