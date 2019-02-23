@@ -56,7 +56,7 @@ h3 {
     align-content: flex-start;
 }
 
-#first-name {
+.first-name {
     margin-left: 25px;
     /* float: left; */
     font-size: 1.2em;
