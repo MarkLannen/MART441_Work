@@ -51,7 +51,7 @@ function createHiddenImageArray() {
 }
 
 function flipImage(number) {
-    var firstNumber = number;
+    firstNumber = number;
     document.getElementById(startImage[firstNumber]).src= hiddenImages[firstNumber];
     imagesDisappear();
 }
