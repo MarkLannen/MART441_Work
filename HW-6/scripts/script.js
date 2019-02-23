@@ -59,4 +59,13 @@ function addToPlayer() {
     var firstName = document.getElementById("name-input").value;
     var lastName = document.getElementById("last-name-input").value;
     var age = document.getElementById("age-input").value;
+    
+    // Add input values to JSON object
+    player.firstName = firstName;
+    localStorage.setItem("playerInfo", JSON.stringify(player));
+    window.location = "player_resutls.html";
+
+    // console.log(firstName);
+    // console.log(lastName);
+    // console.log(age);
 }
