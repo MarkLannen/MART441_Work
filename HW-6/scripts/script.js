@@ -6,7 +6,7 @@
 var startImage = ["image1", "image2", "image3", "image4", "image5", "image6","image7", "image8", "image9", "image10", "image11", "image12"];
 var startImagePath = 'img/reveal-image.jpg';
 var firstNumber = -1;
-var secondNumber = -1;
+// var secondNumber = -1;
 
 
 // JSON declaration
@@ -54,14 +54,11 @@ function flipImage(number) {
     var firstNumber = number;
     document.getElementById(startImage[firstNumber]).src= hiddenImages[firstNumber];
     imagesDisappear();
-        // this should be a quick function that just changes
-        // the image based on what number was pressed
 }
 
 function imagesDisappear() {
-    // console.log(firstNumber);
+    console.log(firstNumber);
     document.getElementById(startImage[firstNumber]).src= startImagePath;
-
 }
 
 // Add to the JSON object from the textboxes
