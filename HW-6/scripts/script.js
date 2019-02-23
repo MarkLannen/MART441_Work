@@ -54,18 +54,33 @@ function flipImage(number) {
         // the image based on what number was pressed
 }
 
-// Add to the JSON fromt the textboxes
+// Add to the JSON object from the textboxes
 function addToPlayer() {
     var firstName = document.getElementById("name-input").value;
-    var lastName = document.getElementById("last-name-input").value;
-    var age = document.getElementById("age-input").value;
+    // var lastName = document.getElementById("last-name-input").value;
+    // var age = document.getElementById("age-input").value;
     
-    // Add input values to JSON object
+    // Add first name input values to JSON object
     player.firstName = firstName;
     localStorage.setItem("playerInfo", JSON.stringify(player));
-    window.location = "player_resutls.html";
+    window.location = "index.html";
 
-    // console.log(firstName);
-    // console.log(lastName);
-    // console.log(age);
+    // Add last name input values to JSON object
+    // player.lastName = lastName;
+    // localStorage.setItem("playerInfo", JSON.stringify(player));  
+    
+    // // Add age input values to JSON object
+    // player.age = age;
+    // localStorage.setItem("playerInfo", JSON.stringify(player));       
+    // window.location = "index.html";
+
+    console.log(firstName);
+   
+}
+
+// Get information out of JSON
+function playerInfo(){
+    var playerInformation = localStorage.getItem("playerInfo");
+    player = JSON.parse(playerInformation);
+    console.log(player.firstName);
 }
