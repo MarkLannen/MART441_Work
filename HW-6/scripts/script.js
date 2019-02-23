@@ -6,7 +6,7 @@
 var startImage = ["image1", "image2", "image3", "image4", "image5", "image6","image7", "image8", "image9", "image10", "image11", "image12"];
 var startImagePath = 'img/reveal-image.jpg';
 var firstNumber = -1;
-// var secondNumber = -1;
+var secondNumber = -1;
 
 
 // JSON declaration
@@ -52,8 +52,23 @@ function createHiddenImageArray() {
 
 function flipImage(number) {
     firstNumber = number;
+    if(firstNumber >= 0) 
+    {
+        secondNumber = number;
+        document.getElementById(startImage[number]).src = hiddenImages[secondNumber];
+        setTimeout(imagesDisappear, 1000);
+    }
+
+    else if(firstNumber < 0) 
+    {
+        firstNumber = number;
+        document.getElementById(startImage[firstNumber]).src = hiddenImages[firstNumber];
+    }
+
+
     document.getElementById(startImage[firstNumber]).src= hiddenImages[firstNumber];
-    imagesDisappear();
+  
+   
 }
 
 function imagesDisappear() {
@@ -89,5 +104,5 @@ function addToPlayer() {
 function playerInfo(){
     var playerInformation = localStorage.getItem("playerInfo");
     player = JSON.parse(playerInformation);
-    console.log(player.firstName);
+    // console.log(player.firstName);
 }
