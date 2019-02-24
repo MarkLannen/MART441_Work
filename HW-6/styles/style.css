@@ -46,7 +46,7 @@ h3 {
 }
 
 .tableCell:hover {
-    border: 3px solid #9193FF;
+    /* border: 3px solid #9193FF; */
 }
 .mainTable-display {
     display: flex;

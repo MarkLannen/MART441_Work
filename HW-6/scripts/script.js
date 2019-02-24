@@ -65,16 +65,26 @@ function flipImage(number) {
         document.getElementById(startImage[firstNumber]).src = hiddenImages[firstNumber];
     }
 
+    if (hiddenImages[secondNumber] != hiddenImages[firstNumber] && firstNumber >=0 && secondNumber >=0) 
+    {
+        setTimeout(imagesDisappear, 1000);
+    }
 
-    document.getElementById(startImage[firstNumber]).src= hiddenImages[firstNumber];
-  
-   
+    else if(hiddenImages[secondNumber] == hiddenImages[firstNumber] && firstNumber >=0 && secondNumber >=0)
+    {
+        firstNumber = -1;
+        secondNumber = -1;
+    }
+
+    // document.getElementById(startImage[firstNumber]).src= hiddenImages[firstNumber];   
 }
 
 function imagesDisappear() {
     console.log(firstNumber);
     document.getElementById(startImage[firstNumber]).src= startImagePath;
     document.getElementById(startImage[secondNumber]).src= startImagePath;
+    firstNumber = -1;
+    secondNumber = -1;
 }
 
 // Add to the JSON object from the textboxes
