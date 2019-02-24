@@ -10,7 +10,7 @@ var secondNumber = -1;
 
 
 // JSON declaration
-var player = {"firstName": "", "lastName":"", "age":""};
+var player = {"firstName": "", "lastName":"", "age":"", "numGuesses":""};
 
 var hiddenImages = [];
 
@@ -54,22 +54,24 @@ function flipImage(number) {
     // firstNumber = number;
     if(firstNumber >= 0) 
     {
-        secondNumber = number;
+        secondNumber = number; //makes second image appear
         document.getElementById(startImage[number]).src = hiddenImages[secondNumber];
         setTimeout(imagesDisappear, 1000);
     }
 
     else if(firstNumber < 0) 
     {
-        firstNumber = number;
+        firstNumber = number; // makes first image appear
         document.getElementById(startImage[firstNumber]).src = hiddenImages[firstNumber];
     }
 
+    // Check to see if images do not match
     if (hiddenImages[secondNumber] != hiddenImages[firstNumber] && firstNumber >=0 && secondNumber >=0) 
     {
         setTimeout(imagesDisappear, 1000);
     }
 
+    // Check to see if images not match
     else if(hiddenImages[secondNumber] == hiddenImages[firstNumber] && firstNumber >=0 && secondNumber >=0)
     {
         firstNumber = -1;
