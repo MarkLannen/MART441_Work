@@ -117,5 +117,5 @@ function addToPlayer() {
 function playerInfo(){
     var playerInformation = localStorage.getItem("playerInfo");
     player = JSON.parse(playerInformation);
-    // console.log(player.firstName);
+    console.log(player.firstName);
 }

@@ -86,3 +86,11 @@ h3 {
     margin-left: 25px;
     margin-top: 20px;
 }  
+
+#player-details-button {
+    margin-left: 25px;
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+    font-size: 22px;
+}
