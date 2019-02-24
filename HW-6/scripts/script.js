@@ -51,7 +51,7 @@ function createHiddenImageArray() {
 }
 
 function flipImage(number) {
-    firstNumber = number;
+    // firstNumber = number;
     if(firstNumber >= 0) 
     {
         secondNumber = number;
@@ -74,6 +74,7 @@ function flipImage(number) {
 function imagesDisappear() {
     console.log(firstNumber);
     document.getElementById(startImage[firstNumber]).src= startImagePath;
+    document.getElementById(startImage[secondNumber]).src= startImagePath;
 }
 
 // Add to the JSON object from the textboxes
