@@ -128,3 +128,10 @@ function playerInfo(){
     console.log(player.lastName);
     console.log(player.age);
 }
+
+function finshed() 
+{
+    player.numGuesses = numGuesses;
+    localStorage.setItem("playerInfo", JSON.stringify(player));
+    window.location = "player_results.html";
+}
