@@ -146,5 +146,5 @@ function displayResults()
     console.log(player.age);
     console.log(player.numGuesses);
     document.getElementById("game-results").innerHTML = "Congratulations " + player.firstName + " " + player.lastName
-    + ". At the respectable age of" + "  " + player.age + " you finished the game in " + "  " + player.numGuesses + " " + "guesses. You still clearly have most of your marbles!"
+    + ". At the respectable age of" + "  " + player.age + " you finished the game in " + "  " + player.numGuesses + " " + "guesses. If you managed to finish in under 15 guesses, you still clearly have most of your marbles!"
 }
