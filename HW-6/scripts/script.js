@@ -132,6 +132,11 @@ function playerInfo(){
 function finshed() 
 {
     player.numGuesses = numGuesses;
-    localStorage.setItem("playerInfo", JSON.stringify(player));
+    localStorage.getItem("playerInfo", JSON.stringify(player));
     window.location = "player_results.html";
+}
+
+displayResults() 
+{
+
 }
