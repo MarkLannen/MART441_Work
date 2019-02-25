@@ -129,7 +129,7 @@ function playerInfo(){
     console.log(player.age);
 }
 
-function finshed() 
+function finished() 
 {
     player.numGuesses = numGuesses;
     localStorage.setItem("playerInfo", JSON.stringify(player));
@@ -137,7 +137,7 @@ function finshed()
     console.log(player.numGuesses);
 }
 
-displayResults() 
+function displayResults() 
 {
     var playerInformation = localStorage.getItem("playerInfo");
     player = JSON.parse(playerInformation);
