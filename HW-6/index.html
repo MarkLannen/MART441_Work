@@ -18,6 +18,12 @@
             <h2>PICTURE MEMORY GAME</h2>
         </div>
 
+        <div>
+            <p>Click on an image and then try to find the matching image. When you have 
+                found all the matches, click the 'Finished!' button to see your score.
+            </p>
+        </div>
+
         <hr>
 
         <div class="mainTable">
@@ -39,6 +45,10 @@
             
             <div class="tableCell"><img src="" id="image11" width="250" height="200" onclick="flipImage(10);"></div>
             <div class="tableCell"><img src="" id="image12" width="250" height="200" onclick="flipImage(11);"></div>
+        </div>
+
+        <div id="button-div">
+            <button id="player-details-button" onclick="addToPlayer();">Finished!</button> 
         </div>
 
     </body>

@@ -62,7 +62,7 @@ h3 {
     font-size: 1.2em;
 }
 
-#name-input {
+#first-name-input {
     margin-left: 25px;
     margin-top: 20px;
 }
@@ -92,5 +92,11 @@ h3 {
     padding: 10px 30px;
     background-color: #000;
     color: #fff;
-    font-size: 22px;
+    font-size: 18px;
+}
+
+.instructions-paragraph {
+    font-family: 'Volkhov', serif; 
+    font-size: 2em;
+    margin-left: 25px;
 }

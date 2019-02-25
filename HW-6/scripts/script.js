@@ -7,6 +7,7 @@ var startImage = ["image1", "image2", "image3", "image4", "image5", "image6","im
 var startImagePath = 'img/reveal-image.jpg';
 var firstNumber = -1;
 var secondNumber = -1;
+var numGuesses = 0;
 
 
 // JSON declaration
@@ -54,7 +55,8 @@ function flipImage(number) {
     // firstNumber = number;
     if(firstNumber >= 0) 
     {
-        secondNumber = number; //makes second image appear
+        //makes second image appear
+        secondNumber = number; 
         document.getElementById(startImage[number]).src = hiddenImages[secondNumber];
         setTimeout(imagesDisappear, 1000);
     }
@@ -69,14 +71,20 @@ function flipImage(number) {
     if (hiddenImages[secondNumber] != hiddenImages[firstNumber] && firstNumber >=0 && secondNumber >=0) 
     {
         setTimeout(imagesDisappear, 1000);
+        numGuesses += 1;
+        // return numGuesses;
     }
 
-    // Check to see if images not match
+
+    // Check to see if images do match
     else if(hiddenImages[secondNumber] == hiddenImages[firstNumber] && firstNumber >=0 && secondNumber >=0)
     {
         firstNumber = -1;
         secondNumber = -1;
+        numGuesses += 1;
+        // return numGuesses;
     }
+    console.log(numGuesses);
 
     // document.getElementById(startImage[firstNumber]).src= hiddenImages[firstNumber];   
 }
@@ -91,9 +99,10 @@ function imagesDisappear() {
 
 // Add to the JSON object from the textboxes
 function addToPlayer() {
-    var firstName = document.getElementById("name-input").value;
-    // var lastName = document.getElementById("last-name-input").value;
-    // var age = document.getElementById("age-input").value;
+    var firstName = document.getElementById("first-name-input").value;
+    var lastName = document.getElementById("last-name-input").value;
+    var age = document.getElementById("age-input").value;
+    // var numGuesses = document.getElementById("numGuesses").value;
     
     // Add first name input values to JSON object
     player.firstName = firstName;
@@ -101,16 +110,14 @@ function addToPlayer() {
     window.location = "index.html";
 
     // Add last name input values to JSON object
-    // player.lastName = lastName;
-    // localStorage.setItem("playerInfo", JSON.stringify(player));  
+    player.lastName = lastName;
+    localStorage.setItem("playerInfo", JSON.stringify(player));  
+    window.location = "index.html";
     
     // // Add age input values to JSON object
-    // player.age = age;
-    // localStorage.setItem("playerInfo", JSON.stringify(player));       
-    // window.location = "index.html";
-
-    console.log(firstName);
-   
+    player.age = age;
+    localStorage.setItem("playerInfo", JSON.stringify(player));       
+    window.location = "index.html";
 }
 
 // Get information out of JSON
@@ -118,4 +125,6 @@ function playerInfo(){
     var playerInformation = localStorage.getItem("playerInfo");
     player = JSON.parse(playerInformation);
     console.log(player.firstName);
+    console.log(player.lastName);
+    console.log(player.age);
 }
