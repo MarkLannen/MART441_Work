@@ -145,6 +145,6 @@ function displayResults()
     console.log(player.lastName);
     console.log(player.age);
     console.log(player.numGuesses);
-    document.getElementById("game-results").innerHTML = "Congratulations " + player.firstName + player.lastName
-    + " . At the respectable age of " + player.age + "you finished the game in " + player.numGuesses + "guesses. You still clearly have most, if not all, of your marbles!"
+    document.getElementById("game-results").innerHTML = "Congratulations " + player.firstName + " " + player.lastName
+    + ". At the respectable age of" + "  " + player.age + " you finished the game in " + "  " + player.numGuesses + " " + "guesses. You still clearly have most of your marbles!"
 }

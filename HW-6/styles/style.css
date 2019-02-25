@@ -104,3 +104,9 @@ h3 {
 .bottom-page {
     margin-bottom: 200px;
 }
+
+#game-results {
+    font-family: 'Volkhov', serif; 
+    font-size: 1.5em;
+    margin-left: 25px;
+}
