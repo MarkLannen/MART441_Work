@@ -72,7 +72,7 @@ function flipImage(number) {
     {
         setTimeout(imagesDisappear, 1000);
         numGuesses += 1;
-        // return numGuesses;
+        return numGuesses;
     }
 
 
@@ -82,7 +82,7 @@ function flipImage(number) {
         firstNumber = -1;
         secondNumber = -1;
         numGuesses += 1;
-        // return numGuesses;
+        return numGuesses;
     }
     console.log(numGuesses);
 
@@ -90,7 +90,7 @@ function flipImage(number) {
 }
 
 function imagesDisappear() {
-    console.log(firstNumber);
+    // console.log(firstNumber);
     document.getElementById(startImage[firstNumber]).src= startImagePath;
     document.getElementById(startImage[secondNumber]).src= startImagePath;
     firstNumber = -1;
@@ -145,4 +145,6 @@ function displayResults()
     console.log(player.lastName);
     console.log(player.age);
     console.log(player.numGuesses);
+    document.getElementById("game-results").innerHTML = "Congratulations " + player.firstName + player.lastName
+    + " . At the respectable age of " + player.age + "you finished the game in " + player.numGuesses + "guesses. You still clearly have most, if not all, of your marbles!"
 }
