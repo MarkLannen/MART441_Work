@@ -132,11 +132,17 @@ function playerInfo(){
 function finshed() 
 {
     player.numGuesses = numGuesses;
-    localStorage.getItem("playerInfo", JSON.stringify(player));
+    localStorage.setItem("playerInfo", JSON.stringify(player));
     window.location = "player_results.html";
+    console.log(player.numGuesses);
 }
 
 displayResults() 
 {
-
+    var playerInformation = localStorage.getItem("playerInfo");
+    player = JSON.parse(playerInformation);
+    console.log(player.firstName);
+    console.log(player.lastName);
+    console.log(player.age);
+    console.log(player.numGuesses);
 }
