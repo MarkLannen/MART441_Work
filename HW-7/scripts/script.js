@@ -10,12 +10,7 @@ class ViewFinderObjects
         this.photographer = photographer;
         this.year = year;
     }
-
-    toStringImage()
-    {
-        return this.image;
-    }
-    
+ 
     toStringTitle()
     {
         return "Title: " + this.title;
@@ -36,17 +31,11 @@ class ViewFinderObjects
         return "Year: " + this.year;
     }
 
-
-
     // get theTitle()
     // { 
     //     return this.title;
     // }
 
-    // get theDescription()
-    // { 
-    //     return this.description;
-    // }
 }
 
 function initializeArray()
@@ -59,7 +48,7 @@ function initializeArray()
 
 function getInformation()
 {
-    document.getElementById("image").innerHTML = myViewFinderArray[0].toStringImage();
+    document.getElementById("image").source = myViewFinderArray[0].image;
     document.getElementById("title").innerHTML = myViewFinderArray[0].toStringTitle();
     document.getElementById("description").innerHTML = myViewFinderArray[0].toStringDescription();
     document.getElementById("photographer").innerHTML = myViewFinderArray[0].toStringPhotographer();
