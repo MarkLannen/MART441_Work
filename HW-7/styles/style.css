@@ -30,7 +30,7 @@ h2 {
     font-size: 84px;
 }
 
-#title, #description {
+#title, #description, #photographer, #year {
     color: #fff;
 }
 
