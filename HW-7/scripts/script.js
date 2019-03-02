@@ -2,10 +2,10 @@ var myViewFinderArray = new Array();
 
 class ViewFinderObjects
 {
-    constructor(title, image, description, author, year)
+    constructor(title, description, author, year)
     {
         this.title = title;
-        this.image = image;
+        // this.image = image;
         this.description = description;
         this.author = author;
         this.year = year;
@@ -26,25 +26,22 @@ class ViewFinderObjects
         return this.title;
     }
 
-    get theImage()
+    get theDescription()
     { 
-        return this.image;
+        return this.description;
     }
 }
 
 function initializeArray()
 {
-    var myViewFinderTitle = new ViewFinderObjects("2 Bison");
-    var myViewFinderDescription = new ViewFinderObjects("Black and white photograph of 2 bison");
-    myViewFinderArray.push(myViewFinderTitle);
-    myViewFinderArray.push(myViewFinderDescription);
+    var myViewFinder1 = new ViewFinderObjects("2 Bison", "Black and white photograph of 2 bison");
+    var myViewFinder2 = new ViewFinderObjects();
+    myViewFinderArray.push(myViewFinder1);
+    // myViewFinderArray.push(myViewFinder2);
 }
 
 function getInformation()
 {
-    // console.log(myViewFinder.theTitle);
-    // console.log(myViewFinder.toString());
     document.getElementById("title").innerHTML = myViewFinderArray[0].toStringTitle();
     document.getElementById("description").innerHTML = myViewFinderArray[0].toStringDescription();
-    
 }
