@@ -1,0 +1,112 @@
+body {
+    background-color: #FFF2E6;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    vertical-align: baseline;
+    font-family: 'Volkhov', serif;
+    font-size: 34px;
+}
+
+header {
+    background-color: #333;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 98px;
+    color: #333;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Volkhov', serif; 
+    font-size: 2em;
+    margin-left: 25px;
+}
+
+.mainTable{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.tableCell {
+    margin: 25px;
+}
+
+.tableCell:hover {
+    /* border: 3px solid #9193FF; */
+}
+.mainTable-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.first-name {
+    margin-left: 25px;
+    /* float: left; */
+    font-size: 1.2em;
+}
+
+#first-name-input {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.last-name {  
+    font-size: 1.2em;
+    margin-left: 50px;  
+} 
+
+#last-name-input {
+    margin-left: 25px;
+    margin-top: 20px;
+}  
+
+.age {  
+    font-size: 1.2em;
+    margin-left: 50px;  
+} 
+
+#age-input {
+    margin-left: 25px;
+    margin-top: 20px;
+}  
+
+#player-details-button {
+    margin-left: 25px;
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+}
+
+.instructions-paragraph {
+    font-family: 'Volkhov', serif; 
+    font-size: 1.5em;
+    margin-left: 25px;
+}
+
+.bottom-page {
+    margin-bottom: 200px;
+}
+
+#game-results {
+    font-family: 'Volkhov', serif; 
+    font-size: 1.5em;
+    margin-left: 25px;
+}
