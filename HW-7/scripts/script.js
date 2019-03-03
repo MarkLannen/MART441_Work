@@ -36,10 +36,10 @@ class ViewFinderObjects
         return "Year: " + this.year;
     }
 
-    get theTitle()
-    { 
-        return this.title;
-    }
+    // get theTitle()
+    // { 
+    //     return this.title;
+    // }
 }
 
 function initializeArray()
