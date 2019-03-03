@@ -33,29 +33,44 @@ h2 {
 .flex-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+}
+
+.pic-info {
+    /* flex: 50%; */
+}
+
+.image-section {
+   float: right;
+   margin-top: -150px;
+   margin-right: 100px;
+   margin-left: 20px;
 }
 
 #title, #description, #photographer, #year{
     color: #fff;
     font-family: 'Raleway', sans-serif;
-    /* margin: auto; */
-    /* text-align: center; */
+    margin-left: 50px;
+    margin-right: 20px;
+    
 }
 
-#image {
-    /* display: block; */
-    /* margin-left: auto;
-    margin-right: auto; */
+#title {
+    font-size: 2em;
+    margin-bottom: 16px;
+}
+
+#description {
+    font-style: italic;
 }
 
 #btnSubmit {
     /* display: block; */
     padding: 15px;
     font-size: 18px;
-    /* margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto; */
+    margin-top: 15px;
+    margin-left: 50px;
+  
 }
 
 hr {
@@ -64,6 +79,5 @@ hr {
 
 .hrStyling {
     margin-top: 100px;
+    /* float: clear; */
 }
-
-.pic-info
