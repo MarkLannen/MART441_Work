@@ -32,7 +32,11 @@ h2 {
 
 #title, #description, #photographer, #year {
     color: #fff;
+    font-family: 'Raleway', sans-serif;
 }
 
-
-
+#btnSubmit {
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 15px;
+}
