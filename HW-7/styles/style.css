@@ -30,26 +30,32 @@ h2 {
     font-size: 84px;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
 #title, #description, #photographer, #year{
     color: #fff;
     font-family: 'Raleway', sans-serif;
-    margin: auto;
-    text-align: center;
+    /* margin: auto; */
+    /* text-align: center; */
 }
 
 #image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 #btnSubmit {
-    display: block;
+    /* display: block; */
     padding: 15px;
     font-size: 18px;
-    margin-top: 15px;
+    /* margin-top: 15px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
 }
 
 hr {
@@ -59,3 +65,5 @@ hr {
 .hrStyling {
     margin-top: 100px;
 }
+
+.pic-info
