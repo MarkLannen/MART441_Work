@@ -53,7 +53,7 @@ function initializeArray()
 
 function getInformation()
 {
-    document.getElementById("image").source = myViewFinderArray[0].toStringImage();
+    document.getElementById("image").src = myViewFinderArray[0].toStringImage();
     document.getElementById("title").innerHTML = myViewFinderArray[0].toStringTitle();
     document.getElementById("description").innerHTML = myViewFinderArray[0].toStringDescription();
     document.getElementById("photographer").innerHTML = myViewFinderArray[0].toStringPhotographer();
