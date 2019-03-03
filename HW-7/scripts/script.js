@@ -40,7 +40,6 @@ class ViewFinderObjects
     { 
         return this.title;
     }
-
 }
 
 function initializeArray()
@@ -51,7 +50,6 @@ function initializeArray()
     var myViewFinder4 = new ViewFinderObjects("img/NorthCrowBarn-750px.jpg", "North Crow barn timestack", "Timestack of barn near North Crow Creek - Mission Mountains", "Mark Lannen", "2013");
     var myViewFinder5 = new ViewFinderObjects("img/SonyokMtn-750px.jpg", "Sonyok Mountain timestack", "Timestack of sunset from Sonyok Mountain", "Mark Lannen", "2014");
 
-
     myViewFinderArray.push(myViewFinder1);
     myViewFinderArray.push(myViewFinder2);
     myViewFinderArray.push(myViewFinder3);
@@ -59,11 +57,20 @@ function initializeArray()
     myViewFinderArray.push(myViewFinder5);
 }
 
+function getRandomIndex(a){
+    return Math.floor(Math.random(a) * 5);  
+}
+
+
+
 function getInformation()
 {
-    document.getElementById("image").src = myViewFinderArray[4].toStringImage();
-    document.getElementById("title").innerHTML = myViewFinderArray[4].toStringTitle();
-    document.getElementById("description").innerHTML = myViewFinderArray[4].toStringDescription();
-    document.getElementById("photographer").innerHTML = myViewFinderArray[4].toStringPhotographer();
-    document.getElementById("year").innerHTML = myViewFinderArray[4].toStringYear();
+    randIndex = getRandomIndex(5);
+    console.log(getRandomIndex());
+
+    document.getElementById("image").src = myViewFinderArray[randIndex].toStringImage();
+    document.getElementById("title").innerHTML = myViewFinderArray[randIndex].toStringTitle();
+    document.getElementById("description").innerHTML = myViewFinderArray[randIndex].toStringDescription();
+    document.getElementById("photographer").innerHTML = myViewFinderArray[randIndex].toStringPhotographer();
+    document.getElementById("year").innerHTML = myViewFinderArray[randIndex].toStringYear();
 }
