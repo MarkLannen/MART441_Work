@@ -44,7 +44,18 @@ h2 {
 }
 
 #btnSubmit {
+    display: block;
     padding: 15px;
     font-size: 18px;
     margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    margin-bottom: 50px;
+}
+
+.hrStyling {
+    margin-top: 100px;
 }
