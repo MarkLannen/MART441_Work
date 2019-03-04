@@ -1,2 +1,2 @@
-https://github.com/MarkLannenUM/MART441_Work/tree/master/HW-6
-https://marklannenum.github.io/MART441_Work/HW-6/player_details.html
+https://github.com/MarkLannenUM/MART441_Work/tree/master/HW-7
+https://marklannenum.github.io/MART441_Work/HW-7/index.html
