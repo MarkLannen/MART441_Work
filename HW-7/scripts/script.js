@@ -44,12 +44,14 @@ function initializeArray()
     var myViewFinder3 = new ViewFinderObjects("img/FlatheadLake-500px.jpg", "Flathead B&W", "Black and white long exposure from south shore of Flathead Lake", "Mark Lannen", "2012");
     var myViewFinder4 = new ViewFinderObjects("img/NorthCrowBarn-500px.jpg", "North Crow barn timestack", "Timestack of barn near North Crow Creek - Mission Mountains", "Mark Lannen", "2013");
     var myViewFinder5 = new ViewFinderObjects("img/SonyokMtn-500px.jpg", "Sonyok Mountain timestack", "Timestack of sunset from Sonyok Mountain", "Mark Lannen", "2014");
+    var myViewFinder6 = new ViewFinderObjects("img/GreatHornedOwl-500px.jpg", "Great Horned Owl", "Great Horned Owl at Ninepipes Resevoir", "Mark Lannen", "2013");
 
     myViewFinderArray.push(myViewFinder1);
     myViewFinderArray.push(myViewFinder2);
     myViewFinderArray.push(myViewFinder3);
     myViewFinderArray.push(myViewFinder4);
     myViewFinderArray.push(myViewFinder5);
+    myViewFinderArray.push(myViewFinder6);
 }
 
 function getRandomIndex(a){
