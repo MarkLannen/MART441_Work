@@ -45,6 +45,7 @@ function initializeArray()
     var myViewFinder4 = new ViewFinderObjects("img/NorthCrowBarn-500px.jpg", "North Crow barn timestack", "Timestack of barn near North Crow Creek - Mission Mountains", "Mark Lannen", "2013");
     var myViewFinder5 = new ViewFinderObjects("img/SonyokMtn-500px.jpg", "Sonyok Mountain timestack", "Timestack of sunset from Sonyok Mountain", "Mark Lannen", "2014");
     var myViewFinder6 = new ViewFinderObjects("img/GreatHornedOwl-500px.jpg", "Great Horned Owl", "Great Horned Owl at Ninepipes Resevoir", "Mark Lannen", "2013");
+    var myViewFinder7 = new ViewFinderObjects("img/BumbleBee_Penstemon-500px.jpg", "Bumble Bee", "Bumble Bee and Penstemon", "Mark Lannen", "2015");
 
     myViewFinderArray.push(myViewFinder1);
     myViewFinderArray.push(myViewFinder2);
@@ -52,15 +53,16 @@ function initializeArray()
     myViewFinderArray.push(myViewFinder4);
     myViewFinderArray.push(myViewFinder5);
     myViewFinderArray.push(myViewFinder6);
+    myViewFinderArray.push(myViewFinder7);
 }
 
 function getRandomIndex(a){
-    return Math.floor(Math.random(a) * 5);  
+    return Math.floor(Math.random(a) * 7);  
 }
 
 function getInformation()
 {
-    randIndex = getRandomIndex(5);
+    randIndex = getRandomIndex(7);
     console.log(getRandomIndex());
 
     document.getElementById("image").src = myViewFinderArray[randIndex].toStringImage();
