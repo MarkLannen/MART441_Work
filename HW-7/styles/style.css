@@ -73,6 +73,11 @@ h2 {
   
 }
 
+img {
+    border:10px solid #fff;
+    margin-bottom: 50px;
+}
+
 hr {
     margin-bottom: 50px;
 }
