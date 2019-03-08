@@ -1,1 +1,14 @@
 
+body {
+    background-color: #d48d8c;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 251, 0);
+    position: absolute;
+    left: 200;
+    top: 500;
+}
+
