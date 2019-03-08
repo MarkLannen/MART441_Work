@@ -3,12 +3,18 @@ body {
     background-color: #d48d8c;
 }
 
-#square {
+#square1{
     width: 100px;
     height: 100px;
-    background: rgb(255, 251, 0);
+    background: rgb(0, 255, 64);
     position: absolute;
-    left: 200;
-    top: 500;
+    left: 100px;
+    top: 150px;
+}
+
+#move {
+    position: absolute;
+    left: 50px;
+    top: 50px;
 }
 
