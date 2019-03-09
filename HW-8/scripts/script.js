@@ -1,11 +1,16 @@
 console.log("World!")
 
+class Images {
+    constructor(image) {
+        this.image = image;
+    }
+}
+
 $(document).ready(function() {
     
     $("button").click(function(){
         
-        moveSquare();
-        
+        setInterval(moveSquare, 2000);
     });
 
 });
