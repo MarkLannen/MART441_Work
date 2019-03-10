@@ -1,4 +1,3 @@
-// var imageSelector ="image-Id";
 
 // Image class
 var imageArray = new Array();
@@ -31,8 +30,8 @@ function initializeArray() {
 }
 
 console.log(imageArray);
-// Jquery
 
+// Jquery
 $(document).ready(function() {
     $(imageArray[0].theImageSelector).attr("src", imageArray[0].theImagePath);
     $("button").click(function(){        
