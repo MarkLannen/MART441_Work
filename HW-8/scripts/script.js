@@ -29,14 +29,19 @@ function initializeArray() {
     imageArray.push(image4);
 }
 
+function getRandomIndex(){
+    return Math.floor(Math.random() * 4);
+}
+
+console.log(getRandomIndex());
+
 // Jquery
 $(document).ready(function() {
 
-    // $(imageArray[0].theImageSelector).attr("src", imageArray[0].theImagePath);
-    $(imageArray[2].theImageSelector).attr("src", "img/cloud-1.jpg");
+    $(imageArray[getRandomIndex()].theImageSelector).attr("src", imageArray[getRandomIndex()].theImagePath);
 
-    $("button").click(function(){        
-        $(imageArray[0].theImageSelector).fadeOut().fadeIn();
+    $("button").click(function(){
+        $(imageArray[getRandomIndex()].theImageSelector).attr("src", imageArray[getRandomIndex()].theImagePath).fadeOut().fadeIn();
     });
 
 });
@@ -47,7 +52,7 @@ $(document).ready(function() {
 
 
 // function moveSquare(){
-    
+
 //     $("#square1").animate({left:250}).animate({top:500}).animate({left:50}).animate({top:150});
-    
+
 // }
