@@ -29,11 +29,12 @@ function initializeArray() {
     imageArray.push(image4);
 }
 
-console.log(imageArray);
-
 // Jquery
 $(document).ready(function() {
-    $(imageArray[0].theImageSelector).attr("src", imageArray[0].theImagePath);
+
+    // $(imageArray[0].theImageSelector).attr("src", imageArray[0].theImagePath);
+    $(imageArray[2].theImageSelector).attr("src", "img/cloud-1.jpg");
+
     $("button").click(function(){        
         $(imageArray[0].theImageSelector).fadeOut().fadeIn();
     });
