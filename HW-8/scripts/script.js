@@ -1,22 +1,49 @@
-console.log("World!")
+var imageSelector ="image-Id";
+
+// Image class
+var imageArray = new Array();
 
 class Images {
-    constructor(image) {
-        this.image = image;
+    constructor(selector, imagePath) {
+        this.selector = selector;
+        this.imagePath = imagePath;
+    }
+
+    get theImageSelector() {
+        return this.selector;
+    }
+
+    get theImagePath() {
+        return this.imagePath;
     }
 }
 
+function initializeArray() {
+    var image1 = new Images("img/cloud-1.jpg");
+    var image2 = new Images("img/milkyWay-1.jpg");
+    var image3 = new Images("img/nebula-1.jpg");
+    var image4 = new Images("img/universe-1.jpg");
+
+    imageArray.push(image1);
+    imageArray.push(image2);
+    imageArray.push(image3);
+    imageArray.push(image4);
+}
+
+console.log(imageArray);
+// Jquery
+
 $(document).ready(function() {
-    
+    $(imageArray[0]).src=imageArray[0].theImagePath;
     $("button").click(function(){
         
-        setInterval(moveSquare, 2000);
+        $(imageArray[0]).fadeOut().fadeIn();
     });
 
 });
 
-function moveSquare(){
+// function moveSquare(){
     
-    $("#square1").animate({left:250}).animate({top:500}).animate({left:50}).animate({top:150});
+//     $("#square1").animate({left:250}).animate({top:500}).animate({left:50}).animate({top:150});
     
-}
+// }
