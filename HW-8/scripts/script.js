@@ -36,7 +36,7 @@ console.log(imageArray);
 $(document).ready(function() {
     $(imageArray[0].theImageSelector).attr("src", imageArray[0].theImagePath);
     $("button").click(function(){        
-        $(imageArray[0]).fadeOut().fadeIn();
+        $(imageArray[0].theImageSelector.fadeOut().fadeIn();
     });
 
 });
