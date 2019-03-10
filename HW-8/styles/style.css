@@ -18,49 +18,4 @@ body {
     top: 50px;
 }
 
-#navArrows {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    margin: 100px auto 0;
-    background: #333;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    padding: 20px;
-}
 
-.navigationArrow {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: white;
-    color: #222;
-}
-
-#up {
-    left: 50%;
-    margin-left: -25px;
-}
-
-#left, #right {
-    top: 50%;
-    margin-top: -25px;
-}
-
-#right {
-    right: 20px;
-    left: inherit;
-}
-
-#down {
-    bottom: 20px;
-    top: inherit;
-    left: 50%;
-    margin-left: -25px;
-}

@@ -1,4 +1,4 @@
-var imageSelector ="image-Id";
+// var imageSelector ="image-Id";
 
 // Image class
 var imageArray = new Array();
@@ -19,10 +19,10 @@ class Images {
 }
 
 function initializeArray() {
-    var image1 = new Images("img/cloud-1.jpg");
-    var image2 = new Images("img/milkyWay-1.jpg");
-    var image3 = new Images("img/nebula-1.jpg");
-    var image4 = new Images("img/universe-1.jpg");
+    var image1 = new Images("#image-Id", "img/cloud-1.jpg");
+    var image2 = new Images("#image-Id", "img/milkyWay-1.jpg");
+    var image3 = new Images("#image-Id", "img/nebula-1.jpg");
+    var image4 = new Images("#image-Id", "img/universe-1.jpg");
 
     imageArray.push(image1);
     imageArray.push(image2);
@@ -34,9 +34,8 @@ console.log(imageArray);
 // Jquery
 
 $(document).ready(function() {
-    $(imageArray[0]).src=imageArray[0].theImagePath;
-    $("button").click(function(){
-        
+    $(imageArray[0].theImageSelector).attr("src", imageArray[0].theImagePath);
+    $("button").click(function(){        
         $(imageArray[0]).fadeOut().fadeIn();
     });
 
