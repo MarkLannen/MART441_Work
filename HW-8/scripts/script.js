@@ -33,7 +33,7 @@ function getRandomIndex(){
     return Math.floor(Math.random() * 4);
 }
 
-console.log(getRandomIndex());
+
 
 // Jquery
 $(document).ready(function() {
@@ -43,6 +43,8 @@ $(document).ready(function() {
     $("button").click(function(){
         $(imageArray[getRandomIndex()].theImageSelector).attr("src", imageArray[getRandomIndex()].theImagePath).fadeOut().fadeIn();
     });
+
+
 
 });
 
