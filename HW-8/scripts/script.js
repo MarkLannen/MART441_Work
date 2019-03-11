@@ -50,13 +50,14 @@ $(document).ready(function() {
     });
 });
 
+function moveSquare(){
+    for (var i = 0; i < 3; i ++) {
+        $("#square1").animate({left:150}).animate({top:500}).animate({left:50}).animate({top:200});
 
+    for (var x = 0; x < 5; x ++) {
+        $("#square2").animate({left:250}).animate({top:500}).animate({left:50}).animate({top:150});
+        }
+    }
+    $("#square3").animate({left:250}).animate({top:500}).animate({left:50}).animate({top:150});
 
-
-
-
-// function moveSquare(){
-
-//     $("#square1").animate({left:250}).animate({top:500}).animate({left:50}).animate({top:150});
-
-// }
+}
