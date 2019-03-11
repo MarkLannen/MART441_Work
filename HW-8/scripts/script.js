@@ -33,7 +33,17 @@ function getRandomIndex(){
     return Math.floor(Math.random() * 4);
 }
 
+class Squares {
+    constructor (width, height, color){
+        this.width = width;
+        this.height = height;
+        this.color = color;
+    }
 
+
+
+
+}
 
 // Jquery
 $(document).ready(function() {
@@ -43,9 +53,6 @@ $(document).ready(function() {
     $("button").click(function(){
         $(imageArray[getRandomIndex()].theImageSelector).attr("src", imageArray[getRandomIndex()].theImagePath).fadeOut().fadeIn();
     });
-
-
-
 });
 
 
