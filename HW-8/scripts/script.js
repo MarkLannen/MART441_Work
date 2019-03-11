@@ -52,12 +52,14 @@ $(document).ready(function() {
 
 function moveSquare(){
     for (var i = 0; i < 3; i ++) {
-        $("#square1").animate({left:150}).animate({top:500}).animate({left:50}).animate({top:200});
-
-    for (var x = 0; x < 5; x ++) {
-        $("#square2").animate({left:250}).animate({top:500}).animate({left:50}).animate({top:150});
-        }
+        $("#square1").animate({left:150}).animate({top:500}).animate({left:400}).animate({top:200});
     }
-    $("#square3").animate({left:250}).animate({top:500}).animate({left:50}).animate({top:150});
 
+    for (var j = 0; j < 5; j ++) {
+        $("#square2").animate({left:550}).animate({top:500}).animate({left:250}).animate({top:150});
+    }
+
+    for (var k = 0; k < 7; k ++) {
+    $("#square3").animate({left:250}).animate({top:500}).animate({left:50}).animate({top:150});
+    }
 }
