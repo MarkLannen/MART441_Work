@@ -35,3 +35,21 @@ body {
     left: 20px;
     top: 20px;
 }
+
+#p1 {
+    color: #0a3c02;
+    font-family: arial;
+    font-size: 24px;
+}
+
+#p2 {
+    color: #51015b;
+    font-family: tahoma;
+    font-size: 35px;
+}
+
+#p3 {
+    color: #f4dcff;
+    font-family: times;
+    font-size: 20px;
+}
