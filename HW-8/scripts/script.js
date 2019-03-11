@@ -38,7 +38,7 @@ function getRandomIndex(){
 // Jquery
 $(document).ready(function() {
 
-    $(imageArray[getRandomIndex()].theImageSelector).attr("src", imageArray[getRandomIndex()].theImagePath);
+    // $(imageArray[getRandomIndex()].theImageSelector).attr("src", imageArray[getRandomIndex()].theImagePath);
 
     $("button").click(function(){
         $(imageArray[getRandomIndex()].theImageSelector).attr("src", imageArray[getRandomIndex()].theImagePath).fadeOut().fadeIn();
