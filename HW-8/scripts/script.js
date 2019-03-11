@@ -39,19 +39,14 @@ class Squares {
         this.height = height;
         this.color = color;
     }
-
-
-
-
 }
 
 // Jquery
 $(document).ready(function() {
 
-    // $(imageArray[getRandomIndex()].theImageSelector).attr("src", imageArray[getRandomIndex()].theImagePath);
-
     $("button").click(function(){
-        $(imageArray[getRandomIndex()].theImageSelector).attr("src", imageArray[getRandomIndex()].theImagePath).fadeOut().fadeIn();
+        $(imageArray[getRandomIndex()].theImageSelector).attr("src", imageArray[getRandomIndex()].theImagePath).fadeIn().fadeOut();
+
     });
 });
 
