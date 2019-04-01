@@ -8,12 +8,19 @@ class Images {
         this.imagePath = imagePath;
     }
 
+    // makes this.etc. read only. When calling a get function you don't need ()'
+
     get theImageSelector() {
         return this.selector;
     }
 
     get theImagePath() {
         return this.imagePath;
+    }
+
+    // set allows properties of a class to be change.
+    set theImagePath(value){
+        this.imagePath = value;
     }
 }
 
@@ -43,6 +50,8 @@ class Squares {
 
 // Jquery
 $(document).ready(function() {
+
+    // Set getRandomIndex() to a variable and use that instead of the function itself - ensures same image is being used.
 
     $("button").click(function(){
         $(imageArray[getRandomIndex()].theImageSelector).attr("src", imageArray[getRandomIndex()].theImagePath).fadeIn().fadeOut();
