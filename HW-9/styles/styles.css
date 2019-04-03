@@ -7,4 +7,13 @@ td {
     border-style: groove;
     border-color: black;
     border-width: 1px;
+    padding: 10px;
+}
+
+#btnSubmit {
+    background-color: salmon;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    display: block;
 }
