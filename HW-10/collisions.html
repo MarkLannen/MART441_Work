@@ -26,6 +26,9 @@
                 this.width = width;
                 this.height = height;
             }
+
+            // get
+
         }
 
         var canvas = document.getElementById("myCanvas");
@@ -34,8 +37,6 @@
         var y = 250;
         ctx.fillStyle = "#3EC8FF";
         drawSquare();
-
-
 
         var object1 = new Object(200, 200, 50, 50);
         console.log(object1);
@@ -47,10 +48,6 @@
             // ctx.fillRect(x + 50, y + 75, 200, 200);
             ctx.fillRect(object1.x, object1.y, object1.width, object1.height);
         }
-
-
-
-
 
     </script>
 
