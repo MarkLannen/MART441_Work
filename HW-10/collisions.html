@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./handsonscript.js"></script>
+    <style>body{background-color: blanchedalmond; height:400px;font-size:24px}</style>
+</head>
+<style>
+    #myCanvas{
+        border:black;
+        border-style: solid;
+        border-width: 2px;
+
+    }
+</style>
+
+<body>
+    <canvas id="myCanvas" height="600" width="800"></canvas>
+
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        var x = 250;
+        var y = 250;
+        ctx.fillStyle = "#0000FF";
+        drawSquare();
+
+        function drawSquare()
+        {
+            ctx.clearRect(0,0,800,600);
+            ctx.fillRect(x, y, 20, 20);
+        }
+
+
+        // Create object class
+
+        class Object{
+            constructor(x, y, width, height) {
+                this.x = x;
+                this.y = y;
+                this.width = width;
+                this.height = height;
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
