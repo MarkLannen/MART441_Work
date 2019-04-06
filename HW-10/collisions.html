@@ -2,7 +2,6 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./handsonscript.js"></script>
     <style>body{background-color: blanchedalmond; height:400px;font-size:24px}</style>
 </head>
 <style>
@@ -17,7 +16,6 @@
 <body>
     <canvas id="myCanvas" height="600" width="800"></canvas>
 
-
     <script>
         var canvas = document.getElementById("myCanvas");
         var ctx = canvas.getContext("2d");
@@ -26,15 +24,7 @@
         ctx.fillStyle = "#0000FF";
         drawSquare();
 
-        function drawSquare()
-        {
-            ctx.clearRect(0,0,800,600);
-            ctx.fillRect(x, y, 20, 20);
-        }
-
-
         // Create object class
-
         class Object{
             constructor(x, y, width, height) {
                 this.x = x;
@@ -43,6 +33,20 @@
                 this.height = height;
             }
         }
+
+        object1 = new Object(200, 200, 50, 50);
+        console.log(object1);
+
+        function drawSquare()
+        {
+            ctx.clearRect(0,0,800,600);
+            ctx.fillRect(x, y, 20, 20);
+            // ctx.fillRect(x + 50, y + 75, 200, 200);
+            // ctx.fillRect(object1);
+        }
+
+
+
 
 
     </script>
