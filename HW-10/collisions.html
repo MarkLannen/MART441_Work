@@ -40,6 +40,14 @@
         var ctx2 = canvas.getContext("2d");
 
         drawSquare();
+        setInterval(update, 1000/60);
+
+        function update()
+        {
+            object2.x -= 1;
+            object2.y -= 1;
+            drawSquare();
+        }
 
         function drawSquare()
         {
