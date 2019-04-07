@@ -41,7 +41,6 @@
         var x = 250;
         var y = 250;
 
-
         drawSquare();
 
         function drawSquare()
@@ -51,6 +50,55 @@
             ctx.fillRect(object1.x, object1.y, object1.width, object1.height);
             ctx2.fillStyle = object2.color;
             ctx2.fillRect(object2.x, object2.y, object2.width, object2.height);
+        }
+
+        $(document).ready(function(){
+            $(event).keypress(function(event){
+                getKey(event);
+            });
+        });
+
+        function getKey(event)
+        {
+            var char = event.which || event.keyCode;
+            var actualLetter = String.fromCharCode(char);
+            if(actualLetter == "w")
+            {
+                moveUp();
+            }
+            else if(actualLetter == "a")
+            {
+                moveLeft();
+            }
+            else if(actualLetter == "s")
+            {
+                moveRight();
+            }
+            else if(actualLetter == "d")
+            {
+                moveDown();
+            }
+            drawSquare();
+        }
+
+        function moveUp()
+        {
+            y -= 10;
+        }
+
+        function moveLeft()
+        {
+            x -= 10;
+        }
+
+        function moveRight()
+        {
+            x += 10;
+        }
+
+        function moveDown()
+        {
+            y += 10;
         }
 
     </script>
