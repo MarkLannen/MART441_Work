@@ -44,13 +44,13 @@
 
         function update()
         {
-            object2.x -= 1;
+            object2.x += 1;
             if (object2.x <= 0 || object2.x >= 600) {
                 object2.x *= -1;
             }
             object2.y -= 1;
             if (object2.y < 0 || object2.y > 800) {
-                object2.y = -1;
+                object2.y *= -100;
             }
             drawSquare();
         }
