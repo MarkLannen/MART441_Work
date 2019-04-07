@@ -38,8 +38,6 @@
         var canvas = document.getElementById("myCanvas");
         var ctx = canvas.getContext("2d");
         var ctx2 = canvas.getContext("2d");
-        var x = 250;
-        var y = 250;
 
         drawSquare();
 
@@ -83,22 +81,22 @@
 
         function moveUp()
         {
-            y -= 10;
+            object1.y -= 50;
         }
 
         function moveLeft()
         {
-            x -= 10;
+            object1.x -= 50;
         }
 
         function moveRight()
         {
-            x += 10;
+            object1.x += 50;
         }
 
         function moveDown()
         {
-            y += 10;
+            object1.y += 50;
         }
 
     </script>
