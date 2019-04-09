@@ -99,10 +99,10 @@ function getKey(event)
     if (hasCollided(object1, object2))
     {
         object2.color = "#ff0000";
-        object2.w *= 2;
-        object2.h *= 2;
-        var bg_color = document.getElementById('background');
-        bg_color.style.color = "#00ff00";
+        object2.w *= 1.5;
+        object2.h *= 1.5;
+        var canvasColor = document.getElementById("myCanvas");
+        canvasColor.style.background = "#00ff00";
     }
 
 
