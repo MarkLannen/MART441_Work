@@ -1,12 +1,33 @@
 // Create object class
 class Object{
-    constructor(x, y, width, height, color) {
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height;
+    constructor(x, y, w, h, color) {
+        this.xcoord = x;
+        this.ycoord = y;
+        this.w = w;
+        this.h = h;
         this.color = color;
     }
+
+    get x()
+    {
+        return this.xcoord;
+    }
+
+    get y()
+    {
+        return this.ycoord;
+    }
+
+    get width()
+    {
+        return this.w;
+    }
+
+    get height()
+    {
+        return this.h;
+    }
+
 }
 
 let object1 = new Object(20, 20, 100, 100, "#3EC8FF");
@@ -19,21 +40,24 @@ var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var ctx2 = canvas.getContext("2d");
 
+let x_steps = 10;
+let y_steps = 10;
 
-setInterval(update, 1000/60);
+
+setInterval(update, 1000/8);
 drawSquare();
 
 function update()
 {
-    object2.x -= 10;
-    console.log(object2.x);
-    if (object2.x <= 0 || object2.x >= 600) {
-        object2.x *= -10;
+    object2.xcoord -= x_steps;
+    console.log(object2.xcoord);
+    if (object2.xcoord <= 0 || object2.xcoord >= 725) {
+        x_steps *= -1;
     }
 
-    object2.y -= 10;
-    if (object2.y <= 0 || object2.y >= 800) {
-        object2.y *= -10;
+    object2.ycoord -= y_steps;
+    if (object2.ycoord <= 0 || object2.ycoord >= 525) {
+        y_steps *= -1;
     }
     drawSquare();
 }
