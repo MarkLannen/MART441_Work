@@ -1,5 +1,9 @@
 #myCanvas {
-    border: black;
+    border: salmon;
     border-style: solid;
     border-width: 2px;
+}
+
+#background {
+    background-color: = #00ff00;
 }

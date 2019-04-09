@@ -98,9 +98,11 @@ function getKey(event)
     }
     if (hasCollided(object1, object2))
     {
-        object2.color = "#000000";
+        object2.color = "#ff0000";
         object2.w *= 2;
         object2.h *= 2;
+        var bg_color = document.getElementById('background');
+        bg_color.style.color = "#00ff00";
     }
 
 
