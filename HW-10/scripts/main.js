@@ -44,7 +44,7 @@ let x_steps = 10;
 let y_steps = 10;
 
 
-setInterval(update, 1000/60);
+setInterval(update, 1000/600);
 drawSquare();
 
 function update()
@@ -99,6 +99,8 @@ function getKey(event)
     if (hasCollided(object1, object2))
     {
         object2.color = "#000000";
+        object2.w *= 2;
+        object2.h *= 2;
     }
 
 
