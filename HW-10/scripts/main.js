@@ -31,10 +31,10 @@ class Object{
 }
 
 let object1 = new Object(20, 20, 100, 100, "#3EC8FF");
-console.log(object1);
+// console.log(object1);
 
 let object2 = new Object(700, 500, 75, 75, "#97C800");
-console.log(object2);
+// console.log(object2);
 
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
@@ -44,13 +44,13 @@ let x_steps = 10;
 let y_steps = 10;
 
 
-setInterval(update, 1000/8);
+setInterval(update, 1000/60);
 drawSquare();
 
 function update()
 {
     object2.xcoord -= x_steps;
-    console.log(object2.xcoord);
+    // console.log(object2.xcoord);
     if (object2.xcoord <= 0 || object2.xcoord >= 725) {
         x_steps *= -1;
     }
@@ -96,25 +96,40 @@ function getKey(event)
     {
         moveDown();
     }
+    if (hasCollided(object1, object2))
+    {
+        object2.color = "#000000";
+    }
+
+
     drawSquare();
+}
+
+function hasCollided(object1, object2) {
+    return !(
+        ((object1.y + object1.height) < (object2.y)) ||
+        (object1.y > (object2.y + object2.height)) ||
+        ((object1.x + object1.width) < object2.x) ||
+        (object1.x > (object2.x + object2.width))
+    );
 }
 
 function moveUp()
 {
-    object1.y -= 50;
+    object1.ycoord -= 50;
 }
 
 function moveLeft()
 {
-    object1.x -= 50;
+    object1.xcoord -= 50;
 }
 
 function moveRight()
 {
-    object1.x += 50;
+    object1.xcoord += 50;
 }
 
 function moveDown()
 {
-    object1.y += 50;
+    object1.ycoord += 50;
 }
