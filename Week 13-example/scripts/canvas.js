@@ -6,16 +6,14 @@ var square1, square2;
 var direction;
 var questions;
 var squareArray = [];
-var collectibleArray = [];
 var lives = 3;
 $(document).ready(function(){
-
-    setup();
-
+    
+    setup();  
+    
     $(this).keypress(function(event){
         getKey(event);
-        console.log(event.keyCode);
-
+        
     });
 });
 
@@ -27,9 +25,8 @@ function setup()
     ctx = canvas.getContext("2d");
 
     // create two objects
-    square1 = new Square(100,500,50,50,"#0000FF");
-    square2 = new Square(500,200,50,50,"#ff0000");
-
+    square1 = new Square(100,100,50,50,"#0000FF");
+    square2 = new Square(400,400,100,100,"#00FF00");
     $.getJSON("data/information.json", function(data) {
         for(var i = 0; i < data.squares.length; i++)
         {
@@ -37,23 +34,14 @@ function setup()
         }
         drawSquare();
     });
+    
 
-    $.getJSON("data/collectible.json", function(data) {
-        for(var i = 0; i < data.collectible.length; i++)
-        {
-            collectibleArray.push(new Square(data.collectible[i].x,data.collectible[i].y, data.collectible[i].h, data.collectible[i].w, data.collectible[i].color));
-        }
-        drawSquare();
-    });
-
-
-
+    
 }
 
 function getKey(event)
 {
     var char = event.which || event.keyCode;
-    console.log(event.keyCode);
     var actualLetter = String.fromCharCode(char);
     if(actualLetter == "w")
     {
@@ -85,7 +73,7 @@ function getKey(event)
         {
             break;
         }
-
+        
         //console.log(test2);
     }
     if(test || test2)
@@ -107,10 +95,10 @@ function getKey(event)
         {
             moveUp();
         }
-
+    
     }
-    drawSquare();
-
+    drawSquare(); 
+    
 }
 
 function moveUp()
@@ -137,22 +125,14 @@ function drawSquare()
     ctx.fillRect(square1.x, square1.y, square1.width, square1.height);
     ctx.fillStyle = square2.mainColor;
     ctx.fillRect(square2.x, square2.y, square2.width, square2.height);
-
     for(var i = 0; i < squareArray.length; i++)
     {
         ctx.fillStyle = squareArray[i].mainColor;
         ctx.fillRect(squareArray[i].x, squareArray[i].y, squareArray[i].width, squareArray[i].height);
     }
 
-    for(var j = 0; j < collectibleArray.length; j++)
-    {
-        ctx.fillStyle = collectibleArray[j].mainColor;
-        ctx.fillRect(collectibleArray[j].x, collectibleArray[j].y, collectibleArray[j].width, collectibleArray[j].height);
-    }
-
-
     ctx.font = "30px Arial";
-    ctx.fillText("Lives: " + lives, 10, 50);
+    ctx.fillText("Lives: " + lives, 10, 50);    
 
 }
 
