@@ -139,10 +139,10 @@ function drawSquare()
         ctx.fillRect(squareArray[i].x, squareArray[i].y, squareArray[i].width, squareArray[i].height);
     }
 
-    for(var i = 0; i < collectibleArray.length; i++)
+    for(var j = 0; j < collectibleArray.length; j++)
     {
-        ctx.fillStyle = collectibleArray[i].mainColor;
-        ctx.fillRect(collectibleArray[i].x, collectibleArray[i].y, collectibleArray[i].width, collectibleArray[i].height);
+        ctx.fillStyle = collectibleArray[j].mainColor;
+        ctx.fillRect(collectibleArray[j].x, collectibleArray[j].y, collectibleArray[j].width, collectibleArray[j].height);
     }
 
 
