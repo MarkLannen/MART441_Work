@@ -27,10 +27,10 @@ function setup()
     ctx = canvas.getContext("2d");
 
     // create two objects
-    square1 = new Square(100,500,50,50,"#0000FF");
+    square1 = new Square(30,520,50,50,"#ffffFF");
     square2 = new Square(500,200,50,50,"#ff0000");
 
-    $.getJSON("data/information.json", function(data) {
+    $.getJSON("data/squares.json", function(data) {
         for(var i = 0; i < data.squares.length; i++)
         {
             squareArray.push(new Square(data.squares[i].x,data.squares[i].y, data.squares[i].h, data.squares[i].w, data.squares[i].color));
