@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     setup();
 
-    $(this).keypress(function(event){
+    $(this).keydown(function(event){
         getKey(event);
         console.log(event.keyCode);
 
@@ -53,24 +53,25 @@ function setup()
 function getKey(event)
 {
     var char = event.which || event.keyCode;
-    console.log(event.keyCode);
+    // console.log(event.keyCode);
     var actualLetter = String.fromCharCode(char);
-    if(actualLetter == "w")
+    console.log(event.keyCode);
+    if(char == 38)
     {
         moveUp();
         direction = "up";
     }
-    if(actualLetter == "s")
+    if(char == 40)
     {
         moveDown();
         direction = "down";
     }
-    if(actualLetter == "a")
+    if(char == 37)
     {
         moveLeft();
         direction = "left";
     }
-    if(actualLetter == "d")
+    if(char == 39)
     {
         moveRight();
         direction = "right";
