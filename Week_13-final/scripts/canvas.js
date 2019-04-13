@@ -4,10 +4,11 @@ var x = 50;
 var y = 50;
 var square1, square2;
 var direction;
-var questions;
+// var questions;
 var squareArray = [];
 var collectibleArray = [];
 var lives = 3;
+var Points = 0;
 $(document).ready(function(){
 
     setup();
@@ -54,8 +55,8 @@ function getKey(event)
 {
     var char = event.which || event.keyCode;
     // console.log(event.keyCode);
-    var actualLetter = String.fromCharCode(char);
-    console.log(event.keyCode);
+        // var actualLetter = String.fromCharCode(char);
+        // console.log(event.keyCode);
     if(char == 38)
     {
         moveUp();
@@ -154,6 +155,7 @@ function drawSquare()
 
     ctx.font = "30px Arial";
     ctx.fillText("Lives: " + lives, 10, 50);
+    ctx.fillText("Points: " + Points, 10, 80);
 
 }
 
