@@ -79,12 +79,12 @@ function getKey(event)
     }
     // var test = hasCollided(square1,square2); - Removed because we're not
     // checking for collision between square1 and square2 anymore.
-    var test2 = false;
+    var test1 = false;
     for(var i = 0; i < squareArray.length; i++)
     {
 
-        test2 = hasCollided(square1,squareArray[i]);
-        if(test2 == true)
+        test1 = hasCollided(square1,squareArray[i]);
+        if(test1 == true)
         {
             break;
         }
@@ -92,28 +92,28 @@ function getKey(event)
         //console.log(test2);
     }
     // if(test || test2)
-    if(test2)
+    if(test1)
     {
         lives--;
         if(direction == "left")
         {
             moveRight();
-            square1.x +=10;
+            square1.x +=30;
         }
         else if(direction == "right")
         {
             moveLeft();
-            square1.x -=10;
+            square1.x -=30;
         }
         else if(direction == "up")
         {
             moveDown();
-            square1.y +=10;
+            square1.y +=30;
         }
         else if(direction == "down")
         {
             moveUp();
-            square1.y -=10;
+            square1.y -=30;
         }
 
     }
