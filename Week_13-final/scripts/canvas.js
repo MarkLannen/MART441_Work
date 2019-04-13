@@ -28,8 +28,8 @@ function setup()
     ctx = canvas.getContext("2d");
 
     // create two objects
-    square1 = new Square(30,520,50,50,"#ffffff");
-    square2 = new Square(500,200,50,50,"#ff0000");
+    square1 = new Square(600,520,50,50,"#ffffff");
+    // square2 = new Square(500,200,50,50,"#ff0000"); Removed Square2 from game
 
     $.getJSON("data/squares.json", function(data) {
         for(var i = 0; i < data.squares.length; i++)
@@ -77,7 +77,8 @@ function getKey(event)
         moveRight();
         direction = "right";
     }
-    var test = hasCollided(square1,square2);
+    // var test = hasCollided(square1,square2); - Removed because we're not
+    // checking for collision between square1 and square2 anymore.
     var test2 = false;
     for(var i = 0; i < squareArray.length; i++)
     {
@@ -90,7 +91,8 @@ function getKey(event)
 
         //console.log(test2);
     }
-    if(test || test2)
+    // if(test || test2)
+    if(test2)
     {
         lives--;
         if(direction == "left")
@@ -141,8 +143,10 @@ function drawSquare()
     ctx.clearRect(0,0,800,600);
 
     //Creates main player square
-    ctx.fillStyle = square1.mainColor;
+    // ctx.fillStyle = square1.mainColor;
     ctx.fillRect(square1.x, square1.y, square1.width, square1.height);
+    // ctx.fillStyle = "#f00";
+    // ctx.fillRect(square2.x, square2.y, square2.width, square2.height);
 
 
     for(var i = 0; i < squareArray.length; i++)
