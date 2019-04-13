@@ -27,7 +27,7 @@ function setup()
     canvas = document.getElementById("myCanvas");
     ctx = canvas.getContext("2d");
 
-    // create two objects
+    // create main player object
     square1 = new Square(600,520,50,50,"#ffffff");
     // square2 = new Square(500,200,50,50,"#ff0000"); Removed Square2 from game
 
@@ -80,19 +80,27 @@ function getKey(event)
     // var test = hasCollided(square1,square2); - Removed because we're not
     // checking for collision between square1 and square2 anymore.
     var test1 = false;
+    var test2 = false;
     for(var i = 0; i < squareArray.length; i++)
     {
-
         test1 = hasCollided(square1,squareArray[i]);
         if(test1 == true)
         {
             break;
         }
-
-        //console.log(test2);
     }
-    // if(test || test2)
-    if(test1)
+
+    for(var j = 0; j < collectibleArray.lenght; j ++)
+    {
+        test2 = hasCollided(square1, collectibleArray[j]);
+        if (test2 == true)
+        {
+            break;
+        }
+    }
+    console.log(test2);
+
+    if(test1 == true)
     {
         lives--;
         if(direction == "left")
@@ -116,6 +124,11 @@ function getKey(event)
             square1.y -=30;
         }
 
+    }
+
+    if(test2 == true)
+    {
+        points ++;
     }
     drawSquare();
 
