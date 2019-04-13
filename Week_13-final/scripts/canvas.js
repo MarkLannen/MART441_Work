@@ -28,7 +28,7 @@ function setup()
     ctx = canvas.getContext("2d");
 
     // create two objects
-    square1 = new Square(30,520,50,50,"#ffffFF");
+    square1 = new Square(30,520,50,50,"#ffffff");
     square2 = new Square(500,200,50,50,"#ff0000");
 
     $.getJSON("data/squares.json", function(data) {
@@ -96,18 +96,22 @@ function getKey(event)
         if(direction == "left")
         {
             moveRight();
+            square1.x +=10;
         }
         else if(direction == "right")
         {
             moveLeft();
+            square1.x -=10;
         }
         else if(direction == "up")
         {
             moveDown();
+            square1.y +=10;
         }
         else if(direction == "down")
         {
             moveUp();
+            square1.y -=10;
         }
 
     }
@@ -135,10 +139,11 @@ function moveLeft()
 function drawSquare()
 {
     ctx.clearRect(0,0,800,600);
+
+    //Creates main player square
     ctx.fillStyle = square1.mainColor;
     ctx.fillRect(square1.x, square1.y, square1.width, square1.height);
-    ctx.fillStyle = square2.mainColor;
-    ctx.fillRect(square2.x, square2.y, square2.width, square2.height);
+
 
     for(var i = 0; i < squareArray.length; i++)
     {
@@ -154,6 +159,7 @@ function drawSquare()
 
 
     ctx.font = "30px Arial";
+    // Changes text color to white.
     ctx.fillStyle = "#fff";
     ctx.fillText("Lives: " + lives, 10, 50);
     ctx.fillText("Points: " + Points, 10, 90);
