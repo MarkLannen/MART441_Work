@@ -90,7 +90,7 @@ function getKey(event)
         }
     }
 
-    for(var j = 0; j < collectibleArray.lenght; j ++)
+    for(var j = 0; j < collectibleArray.length; j ++)
     {
         test2 = hasCollided(square1, collectibleArray[j]);
         if (test2 == true)
@@ -128,7 +128,7 @@ function getKey(event)
 
     if(test2 == true)
     {
-        points ++;
+        Points ++;
     }
     drawSquare();
 
