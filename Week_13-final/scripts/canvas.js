@@ -95,6 +95,7 @@ function getKey(event)
         test2 = hasCollided(square1, collectibleArray[j]);
         if (test2 == true)
         {
+            collectibleArray.pop(j)
             break;
         }
     }
