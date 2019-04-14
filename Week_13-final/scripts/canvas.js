@@ -6,7 +6,7 @@ var square1, square2;
 var direction;
 var squareArray = [];
 var collectibleArray = [];
-var lives = 3;
+var lives = 5;
 var points = 0;
 $(document).ready(function(){
 
@@ -187,11 +187,6 @@ function drawSquare()
         gameOver();
     }
 
-    if(lives <= 0);
-    {
-        youareDead();
-    }
-
     function gameOver()
     {
         ctx.font = "60px Arial";
@@ -202,6 +197,10 @@ function drawSquare()
         ctx.fillText("You scored " + points + " points.", 200, 300);
         ctx.fillText("And have " + lives + " lives remaining.", 200, 350);
     }
+    if(lives <= 0)
+    {
+        youareDead();
+    }
 
     function youareDead()
     {
@@ -210,7 +209,7 @@ function drawSquare()
         ctx.fillStyle = "#fff";
         ctx.fillText("GAME OVER!", 200, 200);
         ctx.font = "30px Arial";
-        ctx.fillText("You scored have lost all your lives", 200, 300);
+        ctx.fillText("You have lost all your lives", 200, 300);
     }
 
 }

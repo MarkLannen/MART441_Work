@@ -1,4 +1,25 @@
 
+body {
+    background-color: #FFF2E6;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    vertical-align: baseline;
+    font-family: 'Volkhov', serif;
+    font-size: 34px;
+}
+
 #myCanvas{
     border:black;
     border-style: solid;
