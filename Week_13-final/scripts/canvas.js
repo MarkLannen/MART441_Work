@@ -187,6 +187,11 @@ function drawSquare()
         gameOver();
     }
 
+    if(lives <= 0);
+    {
+        youareDead();
+    }
+
     function gameOver()
     {
         ctx.font = "60px Arial";
@@ -196,6 +201,16 @@ function drawSquare()
         ctx.font = "30px Arial";
         ctx.fillText("You scored " + points + " points.", 200, 300);
         ctx.fillText("And have " + lives + " lives remaining.", 200, 350);
+    }
+
+    function youareDead()
+    {
+        ctx.font = "60px Arial";
+        // Changes text color to white.
+        ctx.fillStyle = "#fff";
+        ctx.fillText("GAME OVER!", 200, 200);
+        ctx.font = "30px Arial";
+        ctx.fillText("You scored have lost all your lives", 200, 300);
     }
 
 }
