@@ -92,6 +92,7 @@ function getKey(event)
         if (test2 == true)
         {
             collectibleArray.pop(j);
+            console.log(collectibleArray.length);
             break;
         }
     }
@@ -159,9 +160,6 @@ function drawSquare()
 
     //Creates main player square
     ctx.fillRect(square1.x, square1.y, square1.width, square1.height);
-    // ctx.fillStyle = "#f00";
-    // ctx.fillRect(square2.x, square2.y, square2.width, square2.height);
-
 
     for(var i = 0; i < squareArray.length; i++)
     {
