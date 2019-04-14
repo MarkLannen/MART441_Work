@@ -138,19 +138,19 @@ function getKey(event)
 
 function moveUp()
 {
-    square1.y-=50;
+    square1.y-=10;
 }
 function moveDown()
 {
-    square1.y+=50;
+    square1.y+=10;
 }
 function moveRight()
 {
-    square1.x+=50;
+    square1.x+=10;
 }
 function moveLeft()
 {
-    square1.x-=50;
+    square1.x-=10;
 }
 
 function drawSquare()
