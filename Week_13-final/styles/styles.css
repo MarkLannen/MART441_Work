@@ -30,10 +30,11 @@ h2 {
 }
 
 .instructions-paragraph {
-    font-family: 'Volkhov', serif;
-    font-size: 16px;
+    font-family: 'helvetica', sans-serif;
+    font-size: 24px;
     margin-left: 25px;
     width: 35%;
+    line-height: 140%;
 }
 
 .mainContent{
