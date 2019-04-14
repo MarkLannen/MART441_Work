@@ -14,10 +14,17 @@ h1 {
     color: white;
     text-align: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     vertical-align: baseline;
     font-family: 'Volkhov', serif;
     font-size: 34px;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+    color: #333;
+    text-align: center;
 }
 
 #myCanvas{
