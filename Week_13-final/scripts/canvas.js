@@ -138,19 +138,19 @@ function getKey(event)
 
 function moveUp()
 {
-    square1.y-=10;
+    square1.y-=50;
 }
 function moveDown()
 {
-    square1.y+=10;
+    square1.y+=50;
 }
 function moveRight()
 {
-    square1.x+=10;
+    square1.x+=50;
 }
 function moveLeft()
 {
-    square1.x-=10;
+    square1.x-=50;
 }
 
 function drawSquare()
@@ -182,7 +182,7 @@ function drawSquare()
     ctx.fillText("Lives: " + lives, 10, 50);
     ctx.fillText("Points: " + points, 10, 90);
 
-    if(collectibleArray.length == 5)
+    if(collectibleArray.length == 0)
     {
         gameOver();
     }
@@ -192,8 +192,10 @@ function drawSquare()
         ctx.font = "60px Arial";
         // Changes text color to white.
         ctx.fillStyle = "#fff";
-        ctx.fillText("GAME OVER! \n You scored: " + points + "\n and survived with " + lives +
-        "remaining.", 100, 200);
+        ctx.fillText("GAME OVER!", 200, 200);
+        ctx.font = "30px Arial";
+        ctx.fillText("You scored " + points + " points.", 200, 300);
+        ctx.fillText("And have " + lives + " lives remaining.", 200, 350);
     }
 
 }
