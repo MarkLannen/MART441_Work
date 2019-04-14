@@ -4,18 +4,17 @@ var x = 50;
 var y = 50;
 var square1, square2;
 var direction;
-// var questions;
 var squareArray = [];
 var collectibleArray = [];
 var lives = 3;
-var Points = 0;
+var points = 0;
 $(document).ready(function(){
 
     setup();
 
     $(this).keydown(function(event){
         getKey(event);
-        console.log(event.keyCode);
+        // console.log(event.keyCode);
 
     });
 });
@@ -96,7 +95,12 @@ function getKey(event)
             break;
         }
     }
-    console.log(test2);
+
+
+
+
+    console.log(collectibleArray.length);
+    // console.log(test2);
 
     if(test1 == true)
     {
@@ -126,7 +130,7 @@ function getKey(event)
 
     if(test2 == true)
     {
-        Points ++;
+        points ++;
     }
     drawSquare();
 
@@ -176,7 +180,21 @@ function drawSquare()
     // Changes text color to white.
     ctx.fillStyle = "#fff";
     ctx.fillText("Lives: " + lives, 10, 50);
-    ctx.fillText("Points: " + Points, 10, 90);
+    ctx.fillText("Points: " + points, 10, 90);
+
+    if(collectibleArray.length == 5)
+    {
+        gameOver();
+    }
+
+    function gameOver()
+    {
+        ctx.font = "60px Arial";
+        // Changes text color to white.
+        ctx.fillStyle = "#fff";
+        ctx.fillText("GAME OVER! \n You scored: " + points + "\n and survived with " + lives +
+        "remaining.", 100, 200);
+    }
 
 }
 
