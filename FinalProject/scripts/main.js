@@ -1,47 +1,16 @@
-// Create object class
-class Object{
-    constructor(x, y, w, h, color) {
-        this.xcoord = x;
-        this.ycoord = y;
-        this.w = w;
-        this.h = h;
-        this.color = color;
-    }
 
-    get x()
-    {
-        return this.xcoord;
-    }
+var square1 = new Squares(20, 20, 100, 100, "#3EC8FF");
+console.log(square1);
 
-    get y()
-    {
-        return this.ycoord;
-    }
-
-    get width()
-    {
-        return this.w;
-    }
-
-    get height()
-    {
-        return this.h;
-    }
-
-}
-
-let object1 = new Object(20, 20, 100, 100, "#3EC8FF");
-// console.log(object1);
-
-let object2 = new Object(700, 500, 75, 75, "#97C800");
-// console.log(object2);
+var square2 = new Squares(700, 500, 75, 75, "#97C800");
+console.log(square2);
 
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var ctx2 = canvas.getContext("2d");
 
-let x_steps = 10;
-let y_steps = 10;
+var x_steps = 10;
+var y_steps = 10;
 
 
 setInterval(update, 1000/60);
@@ -49,14 +18,14 @@ drawSquare();
 
 function update()
 {
-    object2.xcoord -= x_steps;
-    // console.log(object2.xcoord);
-    if (object2.xcoord <= 0 || object2.xcoord >= 725) {
+    square2.xcoord -= x_steps;
+    // console.log(square2.xcoord);
+    if (square2.xcoord <= 0 || square2.xcoord >= 725) {
         x_steps *= -1;
     }
 
-    object2.ycoord -= y_steps;
-    if (object2.ycoord <= 0 || object2.ycoord >= 525) {
+    square2.ycoord -= y_steps;
+    if (square2.ycoord <= 0 || square2.ycoord >= 525) {
         y_steps *= -1;
     }
     drawSquare();
@@ -64,10 +33,10 @@ function update()
 function drawSquare()
 {
     ctx.clearRect(0,0,800,600);
-    ctx.fillStyle = object1.color;
-    ctx.fillRect(object1.x, object1.y, object1.width, object1.height);
-    ctx2.fillStyle = object2.color;
-    ctx2.fillRect(object2.x, object2.y, object2.width, object2.height);
+    ctx.fillStyle = square1.color;
+    ctx.fillRect(square1.x, square1.y, square1.width, square1.height);
+    ctx2.fillStyle = square2.color;
+    ctx2.fillRect(square2.x, square2.y, square2.width, square2.height);
 }
 
 $(document).ready(function(){
@@ -96,11 +65,11 @@ function getKey(event)
     {
         moveDown();
     }
-    if (hasCollided(object1, object2))
+    if (hasCollided(square1, square2))
     {
-        object2.color = "#ff0000";
-        object2.w *= 1.5;
-        object2.h *= 1.5;
+        square2.color = "#ff0000";
+        square2.w *= 1.5;
+        square2.h *= 1.5;
         var canvasColor = document.getElementById("myCanvas");
         canvasColor.style.background = "#00ff00";
     }
@@ -109,31 +78,31 @@ function getKey(event)
     drawSquare();
 }
 
-function hasCollided(object1, object2) {
+function hasCollided(square1, square2) {
     return !(
-        ((object1.y + object1.height) < (object2.y)) ||
-        (object1.y > (object2.y + object2.height)) ||
-        ((object1.x + object1.width) < object2.x) ||
-        (object1.x > (object2.x + object2.width))
+        ((square1.y + square1.height) < (square2.y)) ||
+        (square1.y > (square2.y + square2.height)) ||
+        ((square1.x + square1.width) < square2.x) ||
+        (square1.x > (square2.x + square2.width))
     );
 }
 
 function moveUp()
 {
-    object1.ycoord -= 50;
+    square1.ycoord -= 50;
 }
 
 function moveLeft()
 {
-    object1.xcoord -= 50;
+    square1.xcoord -= 50;
 }
 
 function moveRight()
 {
-    object1.xcoord += 50;
+    square1.xcoord += 50;
 }
 
 function moveDown()
 {
-    object1.ycoord += 50;
+    square1.ycoord += 50;
 }
