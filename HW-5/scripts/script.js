@@ -12,24 +12,24 @@ var hiddenImages = [];
 /* addStartCard function populates array with 'blank image.'*/
 function addStartCard() {
 
-    for (var i = 0; i < startImage.length; i ++) {        
+    for (var i = 0; i < startImage.length; i ++) {
 
     document.getElementById(startImage[i]).src=startImagePath;
     }
 }
 
-// var count = [0,0,0,0,0]; Need 5 slots. 2 for each picture. 
+// var count = [0,0,0,0,0]; Need 5 slots. 2 for each picture.
 // function that populates array of hidden images
 function createHiddenImageArray() {
-    
+
     // create an array of hidden images
     var hiddenImagePath = ["img/city.jpg", "img/desert.jpg", "img/forest.jpg", "img/mountains.jpg", "img/ocean.jpg", "img/snow.jpg"]
-    
+
     // create another array to make sure the images only get added twice
     var count = [0, 0, 0, 0, 0, 0];
 
     // create a while statement to check to see if our hidden image array is full
-    while(hiddenImages.length < 12) 
+    while(hiddenImages.length < 12)
     {
         // get a random number between 0 and the number total number of images that we can choose from
         var randomNumber = Math.floor(Math.random() * hiddenImagePath.length)
