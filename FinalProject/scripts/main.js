@@ -1,17 +1,11 @@
-//
-// var square1 = new Squares(20, 20, 100, 100, "#3EC8FF");
 
 var square2 = new Squares(700, 500, 75, 75, "#97C800");
-
-// var argentina = new Image();
-// argentina.src = "./img/argentina.png";
 
 imgSource = ["argentina.png", "australia.png", "brazil.png", "china.png", "egypt.png",
 "france.png", "germany.png", "india.png", "italy.png", "australia.png", "south-korea.png",
 "spain.png", "syria.png", "thailand.png", "turkey.png"];
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-// var ctx2 = canvas.getContext("2d");
 
 imgArray = [];
 
@@ -37,13 +31,8 @@ function getRandomY(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-
-
-
-
 var x_steps = 10;
 var y_steps = 10;
-
 
 setInterval(update, 1000/60);
 drawSquare();
@@ -70,13 +59,6 @@ function drawSquare()
     for (var i = 0; i < imgSource.length; i ++) {
             ctx.drawImage(imgArray[i][2], imgArray[i][0], imgArray[i][1]);
     }
-
-    // ctx.fillStyle = square1.color;
-    // ctx.fillRect(square1.x, square1.y, square1.width, square1.height, img/argentina.png);
-
-    // ctx2.fillStyle = square2.color;
-    // ctx2.fillRect(square2.x, square2.y, square2.width, square2.height);
-
 }
 
 $(document).ready(function(){
