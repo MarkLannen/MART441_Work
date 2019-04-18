@@ -14,11 +14,25 @@ imgArray = [];
 
 for (var i = 0; i < imgSource.length; i ++){
     var newImage = new Image();
+    // Randomize x, y coords
+}
+    function getRandomX(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    function getRandomY(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+
     x = 10;
     y = 10;
     newImage.src = "./img/" + imgSource[i];
-    imgArray.push([x,y,newImage]);
-}
+    imgArray.push(getRandomX(0, 600), getRandomY(0, 600), newImage());
+
 console.log(imgArray);
 
 var canvas = document.getElementById("myCanvas");
