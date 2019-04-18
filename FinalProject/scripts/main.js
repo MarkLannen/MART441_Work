@@ -49,6 +49,8 @@ setInterval(update, 1000/60);
 drawSquare();
 
 function update()
+
+//update coordinates to create animation
 {
     square2.xcoord -= x_steps;
     if (square2.xcoord <= 0 || square2.xcoord >= 725) {
