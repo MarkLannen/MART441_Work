@@ -9,35 +9,37 @@ var square2 = new Squares(700, 500, 75, 75, "#97C800");
 imgSource = ["argentina.png", "australia.png", "brazil.png", "china.png", "egypt.png",
 "france.png", "germany.png", "india.png", "italy.png", "australia.png", "south-korea.png",
 "spain.png", "syria.png", "thailand.png", "turkey.png"];
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+// var ctx2 = canvas.getContext("2d");
 
 imgArray = [];
 
 for (var i = 0; i < imgSource.length; i ++){
     var newImage = new Image();
     // Randomize x, y coords
-}
-    function getRandomX(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min;
-    }
-
-    function getRandomY(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min;
-    }
-
-    x = 10;
-    y = 10;
     newImage.src = "./img/" + imgSource[i];
-    imgArray.push(getRandomX(0, 600), getRandomY(0, 600), newImage());
+    x = getRandomX(0, canvas.width - newImage.width);
+    y = getRandomY(0, canvas.height - newImage.height);
+    imgArray.push([x, y, newImage]);
 
-console.log(imgArray);
+    console.log(imgArray);
+}
+function getRandomX(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+}
 
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
-// var ctx2 = canvas.getContext("2d");
+function getRandomY(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+
+
+
 
 var x_steps = 10;
 var y_steps = 10;
