@@ -1,10 +1,9 @@
-class Squares{
-    constructor(x, y, w, h, color) {
+class Images{
+    constructor(x, y, imgPath) {
         this.xcoord = x;
         this.ycoord = y;
         this.w = w;
         this.h = h;
-        this.color = color;
     }
 
     get x()
@@ -17,7 +16,7 @@ class Squares{
         return this.ycoord;
     }
 
-    get width()
+    get path()
     {
         return this.w;
     }

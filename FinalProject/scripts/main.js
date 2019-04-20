@@ -15,7 +15,8 @@ for (var i = 0; i < imgSource.length; i ++){
     newImage.src = "./img/" + imgSource[i];
     x = getRandomX(0, canvas.width - newImage.width);
     y = getRandomY(0, canvas.height - newImage.height);
-    imgArray.push([x, y, newImage]);
+    //Create a countries class and this will instantiate and add to imgArray.
+    imgArray.push(new Countries(x, y, newImage));
 
     console.log(imgArray);
 }
@@ -42,6 +43,7 @@ function update()
 //update coordinates to create animation
 {
     square2.xcoord -= x_steps;
+    imageArray[i].x -= x_steps;
     if (square2.xcoord <= 0 || square2.xcoord >= 725) {
         x_steps *= -1;
     }
