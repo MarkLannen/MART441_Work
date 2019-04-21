@@ -1,5 +1,5 @@
 class Images{
-    constructor(x, y, imgPath) {
+    constructor(x, y, w, h, imgPath) {
         this.xcoord = x;
         this.ycoord = y;
         this.w = w;
