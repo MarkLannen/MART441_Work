@@ -69,39 +69,6 @@ $(document).ready(function(){
     });
 });
 
-function getKey(event)
-{
-    var char = event.which || event.keyCode;
-    var actualLetter = String.fromCharCode(char);
-    if(actualLetter == "w")
-    {
-        moveUp();
-    }
-    else if(actualLetter == "a")
-    {
-        moveLeft();
-    }
-    else if(actualLetter == "s")
-    {
-        moveRight();
-    }
-    else if(actualLetter == "d")
-    {
-        moveDown();
-    }
-    if (hasCollided(square1, square2))
-    {
-        square2.color = "#ff0000";
-        square2.w *= 1.5;
-        square2.h *= 1.5;
-        var canvasColor = document.getElementById("myCanvas");
-        canvasColor.style.background = "#00ff00";
-    }
-
-
-    drawSquare();
-}
-
 function hasCollided(square1, square2) {
     return !(
         ((square1.y + square1.height) < (square2.y)) ||
@@ -109,24 +76,4 @@ function hasCollided(square1, square2) {
         ((square1.x + square1.width) < square2.x) ||
         (square1.x > (square2.x + square2.width))
     );
-}
-
-function moveUp()
-{
-    square1.ycoord -= 50;
-}
-
-function moveLeft()
-{
-    square1.xcoord -= 50;
-}
-
-function moveRight()
-{
-    square1.xcoord += 50;
-}
-
-function moveDown()
-{
-    square1.ycoord += 50;
 }
