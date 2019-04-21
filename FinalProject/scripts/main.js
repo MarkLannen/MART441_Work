@@ -1,5 +1,5 @@
 
-var square2 = new Images(700, 500, 75, 75, "#97C800");
+// var square2 = new Images(700, 500, 75, 75, "#97C800");
 
 imgSource = ["argentina.png", "australia.png", "brazil.png", "china.png", "egypt.png",
 "france.png", "germany.png", "india.png", "italy.png", "australia.png", "south-korea.png",

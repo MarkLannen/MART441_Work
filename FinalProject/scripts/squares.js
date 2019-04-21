@@ -4,6 +4,7 @@ class Images{
         this.ycoord = y;
         this.w = w;
         this.h = h;
+        this.imgPath = imgPath;
     }
 
     get x()
@@ -18,7 +19,7 @@ class Images{
 
     get path()
     {
-        return this.w;
+        return this.imgPath;
     }
 
     get height()
