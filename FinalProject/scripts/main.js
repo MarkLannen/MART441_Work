@@ -1,6 +1,4 @@
 
-// var square2 = new Images(700, 500, 75, 75, "#97C800");
-
 imgSource = ["argentina.png", "australia.png", "brazil.png", "china.png", "egypt.png",
 "france.png", "germany.png", "india.png", "italy.png", "australia.png", "south-korea.png",
 "spain.png", "syria.png", "thailand.png", "turkey.png"];
@@ -43,7 +41,7 @@ function update()
 //update coordinates to create animation
 {
     square2.xcoord -= x_steps;
-    imageArray[i].x -= x_steps;
+    imageArray[i].x_coord -= x_steps;
     if (square2.xcoord <= 0 || square2.xcoord >= 725) {
         x_steps *= -1;
     }
@@ -59,21 +57,21 @@ function drawSquare()
     ctx.clearRect(0,0,800,600);
 
     for (var i = 0; i < imgSource.length; i ++) {
-            ctx.drawImage(imgArray[i][2], imgArray[i][0], imgArray[i][1]);
+            ctx.drawImage(imgArray[i].get_path, imgArray[i].x_coord, imgArray[i].y_coord);
     }
 }
 
-$(document).ready(function(){
-    $(this).keypress(function(event){
-        getKey(event);
-    });
-});
-
-function hasCollided(square1, square2) {
-    return !(
-        ((square1.y + square1.height) < (square2.y)) ||
-        (square1.y > (square2.y + square2.height)) ||
-        ((square1.x + square1.width) < square2.x) ||
-        (square1.x > (square2.x + square2.width))
-    );
-}
+// $(document).ready(function(){
+//     $(this).keypress(function(event){
+//         getKey(event);
+//     });
+// });
+//
+// function hasCollided(square1, square2) {
+//     return !(
+//         ((square1.y + square1.height) < (square2.y)) ||
+//         (square1.y > (square2.y + square2.height)) ||
+//         ((square1.x + square1.width) < square2.x) ||
+//         (square1.x > (square2.x + square2.width))
+//     );
+// }
