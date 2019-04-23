@@ -30,9 +30,6 @@ function getRandomY(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-var x_steps = 10;
-var y_steps = 10;
-
 setInterval(update, 1000/60);
 drawSquare();
 
@@ -40,24 +37,19 @@ function update()
 
 //update coordinates to create animation
 {
-    // countries.x_coord -= x_steps;
-    // imgArray[i].x_coord -= x_steps;
     for (i = 0; i < imgArray.length; i ++){
         imgArray[i].x_coord -= 10;
         if (imgArray[i].x_coord <= 0 || imgArray[i].x_coord >= 725) {
-            x_steps *= -1;
+            imgArray[i] *= -1;
         }
     }
-
 
     for (i = 0; i < imgArray.length; i ++){
         imgArray[i].y_coord -= 10;
         if (imgArray[i].y_coord <= 0 || imgArray[i].y_coord >= 525) {
-            y_steps *= -1;
+            imgArray[i] *= -1;
         }
     }
-
-
     drawSquare();
 }
 function drawSquare()
