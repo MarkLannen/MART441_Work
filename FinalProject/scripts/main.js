@@ -30,19 +30,27 @@ function getRandomY(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-setInterval(update, 1000/60);
+setInterval(update, 1000/30);
 drawSquare();
+
+var new_x_coord = 5;
+var new_y_coord = 5;
 
 function update()
 
 //update coordinates to create animation
 {
+    console.log("Updating");
     for (i = 0; i < imgArray.length; i ++){
-        imgArray[i].x_coord -= 10;
+
+        imgArray[i].x_coord -= new_x_coord;
         if (imgArray[i].x_coord <= 0 || imgArray[i].x_coord >= 725) {
-            imgArray[i] *= -1;
+            imgArray[i].x_step = imgArray[i].x_step *-1;
         }
+        imgArray[i].x = imgArray[i].x + imgArray[i].x_step;
     }
+
+    // console.log(imgArray[i].x_coord);
 
     for (i = 0; i < imgArray.length; i ++){
         imgArray[i].y_coord -= 10;

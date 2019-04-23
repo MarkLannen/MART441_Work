@@ -3,6 +3,8 @@ class Countries{
     this.x = x;
     this.y = y;
     this.path = path;
+    this.x_step = 5;
+    this.y_step = 5;
     }
 
     get x_coord () {
