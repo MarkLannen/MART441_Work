@@ -41,15 +41,23 @@ function update()
 //update coordinates to create animation
 {
     // countries.x_coord -= x_steps;
-    imageArray[i].x_coord -= x_steps;
-    if (imageArray[i].xcoord <= 0 || imageArray[i].xcoord >= 725) {
-        x_steps *= -1;
+    // imgArray[i].x_coord -= x_steps;
+    for (i = 0; i < imgArray.length; i ++){
+        imgArray[i].x_coord -= 10;
+        if (imgArray[i].x_coord <= 0 || imgArray[i].x_coord >= 725) {
+            x_steps *= -1;
+        }
     }
 
-    square2.ycoord -= y_steps;
-    if (square2.ycoord <= 0 || square2.ycoord >= 525) {
-        y_steps *= -1;
+
+    for (i = 0; i < imgArray.length; i ++){
+        imgArray[i].y_coord -= 10;
+        if (imgArray[i].y_coord <= 0 || imgArray[i].y_coord >= 525) {
+            y_steps *= -1;
+        }
     }
+
+
     drawSquare();
 }
 function drawSquare()
