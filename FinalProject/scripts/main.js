@@ -40,9 +40,9 @@ function update()
 
 //update coordinates to create animation
 {
-    square2.xcoord -= x_steps;
+    // countries.x_coord -= x_steps;
     imageArray[i].x_coord -= x_steps;
-    if (square2.xcoord <= 0 || square2.xcoord >= 725) {
+    if (imageArray[i].xcoord <= 0 || imageArray[i].xcoord >= 725) {
         x_steps *= -1;
     }
 
