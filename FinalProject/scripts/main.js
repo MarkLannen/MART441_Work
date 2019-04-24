@@ -53,10 +53,11 @@ function update()
     // console.log(imgArray[i].x_coord);
 
     for (i = 0; i < imgArray.length; i ++){
-        imgArray[i].y_coord -= 10;
+        imgArray[i].y_coord -= new_y_coord;
         if (imgArray[i].y_coord <= 0 || imgArray[i].y_coord >= 525) {
-            imgArray[i] *= -1;
+            imgArray[i].y_step = imgArray[i].y_step *-1;
         }
+        imgArray[i].y = imgArray[i].y + imgArray[i].y_step;
     }
     drawSquare();
 }
