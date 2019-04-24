@@ -30,17 +30,18 @@ function getRandomY(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-setInterval(update, 1000/30);
+setInterval(update, 1000/800);
 drawSquare();
 
+// x and y coordinate variables to be reset every time update function executes
 var new_x_coord = 5;
 var new_y_coord = 5;
 
 function update()
 
-//update coordinates to create animation
+//update coordinates to create animation and canvas edge detection
 {
-    console.log("Updating");
+    // console.log("Updating");
     for (i = 0; i < imgArray.length; i ++){
 
         imgArray[i].x_coord -= new_x_coord;
@@ -66,7 +67,7 @@ function drawSquare()
     ctx.clearRect(0,0,800,600);
 
     for (var i = 0; i < imgSource.length; i ++) {
-            ctx.drawImage(imgArray[i].get_path, imgArray[i].x_coord, imgArray[i].y_coord);
+        ctx.drawImage(imgArray[i].get_path, imgArray[i].x_coord, imgArray[i].y_coord);
     }
 }
 
