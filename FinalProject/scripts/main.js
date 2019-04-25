@@ -32,7 +32,7 @@ function getRandomY(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-setInterval(update, 1000/60);
+setInterval(update, 1000/10);
 drawSquare();
 
 function update()
@@ -68,15 +68,15 @@ function drawSquare()
 
 $(document).ready(function(){
     $(this).click(function(event){
-
+        console.log(event);
         for (i = 0; i < imgArray.length; i ++) {
             if (hasCollided(square, imgArray[i])){
                 imgArray[i].x_step = 0;
                 imgArray[i].y_step = 0;
             }
         }
-        console.log(event.clientX);
-        console.log(event.clientY);
+        square.x = event.clientX;
+        square.y = event.clientY;
     });
 });
 
@@ -84,15 +84,15 @@ $(document).ready(function(){
 // which is now a small square class collides with whatever country is being
  // iterating over.
 
-for (i = 0; i < imgArray.length; i ++) {
+
     function hasCollided(square, country) {
         return !(
             ((square.y + square.height) < (imgArray[i].y)) ||
-            (square.y > (imgArray[i].y + imgArray[i].height)) ||
+            (square.y > (imgArray[i].y + imgArray[i].get_path.height)) ||
             ((square.x + square.width) < imgArray[i].x) ||
-            (square.x > (imgArray[i].x + imgArray[i].width))
+            (square.x > (imgArray[i].x + imgArray[i].get_path.width))
         );
-    }
+
 
 
 }
