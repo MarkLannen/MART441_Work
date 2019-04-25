@@ -1,4 +1,6 @@
 
+var square = new Square(100, 100, 5, 5);
+
 imgSource = ["argentina.png", "australia.png", "brazil.png", "china.png", "egypt.png",
 "france.png", "germany.png", "india.png", "italy.png", "australia.png", "south-korea.png",
 "spain.png", "syria.png", "thailand.png", "turkey.png"];
@@ -33,18 +35,12 @@ function getRandomY(min, max) {
 setInterval(update, 1000/60);
 drawSquare();
 
-// x and y coordinate variables to be reset every time update function executes
-var new_x_coord = 5;
-var new_y_coord = 5;
-
 function update()
 
 //update coordinates to create animation and canvas edge detection
 {
-    // console.log("Updating");
     for (i = 0; i < imgArray.length; i ++){
 
-        imgArray[i].x_coord -= new_x_coord;
         if (imgArray[i].x_coord <= 0 || imgArray[i].x_coord >= 725) {
             imgArray[i].x_step = imgArray[i].x_step *-1;
         }
@@ -54,7 +50,6 @@ function update()
     // console.log(imgArray[i].x_coord);
 
     for (i = 0; i < imgArray.length; i ++){
-        imgArray[i].y_coord -= new_y_coord;
         if (imgArray[i].y_coord <= 0 || imgArray[i].y_coord >= 525) {
             imgArray[i].y_step = imgArray[i].y_step *-1;
         }
@@ -73,16 +68,31 @@ function drawSquare()
 
 $(document).ready(function(){
     $(this).click(function(event){
+
+        for (i = 0; i < imgArray.length; i ++) {
+            if (hasCollided(square, imgArray[i])){
+                imgArray[i].x_step = 0;
+                imgArray[i].y_step = 0;
+            }
+        }
         console.log(event.clientX);
         console.log(event.clientY);
     });
 });
-//
-// function hasCollided(square1, square2) {
-//     return !(
-//         ((square1.y + square1.height) < (square2.y)) ||
-//         (square1.y > (square2.y + square2.height)) ||
-//         ((square1.x + square1.width) < square2.x) ||
-//         (square1.x > (square2.x + square2.width))
-//     );
-// }
+
+//for loop that iterates through all countries and checks if the mouse click,
+// which is now a small square class collides with whatever country I am iterating
+// over.
+
+for (i = 0; i < imgArray.length; i ++) {
+    function hasCollided(square, country) {
+        return !(
+            ((square.y + square.height) < (imgArray[i].y)) ||
+            (square.y > (imgArray[i].y + imgArray[i].height)) ||
+            ((square.x + square.width) < imgArray[i].x) ||
+            (square.x > (imgArray[i].x + imgArray[i].width))
+        );
+    }
+
+
+}
