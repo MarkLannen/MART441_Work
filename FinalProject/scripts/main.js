@@ -4,6 +4,10 @@ var square = new Square(100, 100, 5, 5);
 imgSource = ["argentina.png", "australia.png", "brazil.png", "china.png", "egypt.png",
 "france.png", "germany.png", "india.png", "italy.png", "australia.png", "south-korea.png",
 "spain.png", "syria.png", "thailand.png", "turkey.png"];
+
+countries = ["argentina", "australia", "brazil", "china", "egypt",
+"france", "germany", "india", "italy", "australia", "south-korea",
+"spain", "syria", "thailand", "turkey"];
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
@@ -16,7 +20,7 @@ for (var i = 0; i < imgSource.length; i ++){
     x = getRandomX(0, canvas.width - newImage.width);
     y = getRandomY(0, canvas.height - newImage.height);
     //Create a countries class and this will instantiate and add to imgArray.
-    imgArray.push(new Countries(x, y, newImage));
+    imgArray.push(new Countries(x, y, newImage, countries[i]));
 
     console.log(imgArray);
 }
@@ -47,7 +51,6 @@ function update()
         imgArray[i].x = imgArray[i].x + imgArray[i].x_step;
     }
 
-    // console.log(imgArray[i].x_coord);
 
     for (i = 0; i < imgArray.length; i ++){
         if (imgArray[i].y_coord <= 0 || imgArray[i].y_coord >= 525) {
@@ -61,29 +64,38 @@ function drawSquare()
 {
     ctx.clearRect(0,0,800,600);
 
-    for (var i = 0; i < imgSource.length; i ++) {
+    for (var i = 0; i < imgArray.length; i ++) {
         ctx.drawImage(imgArray[i].get_path, imgArray[i].x_coord, imgArray[i].y_coord);
     }
 }
 
 $(document).ready(function(){
     $(this).click(function(event){
+        square.x = event.clientX;
+        square.y = event.clientY;
         console.log(event);
         for (i = 0; i < imgArray.length; i ++) {
             if (hasCollided(square, imgArray[i])){
                 imgArray[i].x_step = 0;
                 imgArray[i].y_step = 0;
+                console.log(imgArray[i].get_countryName);
+                var answer = window.prompt("What is the name of this country?");
+                if (answer == imgArray[i].get_countryName) {
+                    // Add success here.
+                    imgArray.splice(i,1);
+
+                }
+
+                break;
+
             }
         }
-        square.x = event.clientX;
-        square.y = event.clientY;
+
     });
 });
 
-//for loop that iterates through all countries and checks if the mouse click,
-// which is now a small square class collides with whatever country is being
- // iterating over.
-
+//Collision detection function. Called in the click event to determine where the
+// on the coordinate plane the mouse click occurred.
 
     function hasCollided(square, country) {
         return !(
@@ -92,7 +104,4 @@ $(document).ready(function(){
             ((square.x + square.width) < imgArray[i].x) ||
             (square.x > (imgArray[i].x + imgArray[i].get_path.width))
         );
-
-
-
 }
