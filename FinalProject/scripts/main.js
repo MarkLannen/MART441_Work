@@ -30,7 +30,7 @@ function getRandomY(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-setInterval(update, 1000/800);
+setInterval(update, 1000/100);
 drawSquare();
 
 // x and y coordinate variables to be reset every time update function executes
