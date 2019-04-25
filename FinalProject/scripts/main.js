@@ -81,8 +81,8 @@ $(document).ready(function(){
 });
 
 //for loop that iterates through all countries and checks if the mouse click,
-// which is now a small square class collides with whatever country I am iterating
-// over.
+// which is now a small square class collides with whatever country is being
+ // iterating over.
 
 for (i = 0; i < imgArray.length; i ++) {
     function hasCollided(square, country) {
