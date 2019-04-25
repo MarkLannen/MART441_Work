@@ -30,7 +30,7 @@ function getRandomY(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-setInterval(update, 1000/100);
+setInterval(update, 1000/60);
 drawSquare();
 
 // x and y coordinate variables to be reset every time update function executes
@@ -71,11 +71,12 @@ function drawSquare()
     }
 }
 
-// $(document).ready(function(){
-//     $(this).keypress(function(event){
-//         getKey(event);
-//     });
-// });
+$(document).ready(function(){
+    $(this).click(function(event){
+        console.log(event.clientX);
+        console.log(event.clientY);
+    });
+});
 //
 // function hasCollided(square1, square2) {
 //     return !(
