@@ -36,7 +36,7 @@ function getRandomY(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-setInterval(update, 1000/10);
+setInterval(update, 1000/60);
 drawSquare();
 
 function update()
@@ -44,12 +44,16 @@ function update()
 //update coordinates to create animation and canvas edge detection
 {
     for (i = 0; i < imgArray.length; i ++){
+        console.log(newImage.width);
 
-        if (imgArray[i].x_coord <= 0 || imgArray[i].x_coord >= 725) {
+        if (imgArray[i].x_coord <= 0 || imgArray[i].x_coord >= canvas.width - newImage.width) {
             imgArray[i].x_step = imgArray[i].x_step *-1;
         }
         imgArray[i].x = imgArray[i].x + imgArray[i].x_step;
     }
+
+    console.log(canvas.width);
+
 
 
     for (i = 0; i < imgArray.length; i ++){
