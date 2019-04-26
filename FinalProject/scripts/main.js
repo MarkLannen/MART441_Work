@@ -2,7 +2,7 @@
 var square = new Square(100, 100, 5, 5);
 
 imgSource = ["argentina.png", "australia.png", "brazil.png", "china.png", "egypt.png",
-"france.png", "germany.png", "india.png", "italy.png", "australia.png", "south-korea.png",
+"france.png", "germany.png", "india.png", "italy.png", "south-korea.png",
 "spain.png", "syria.png", "thailand.png", "turkey.png"];
 
 countries = ["argentina", "australia", "brazil", "china", "egypt",
