@@ -6,7 +6,7 @@ imgSource = ["argentina.png", "australia.png", "brazil.png", "china.png", "egypt
 "spain.png", "syria.png", "thailand.png", "turkey.png"];
 
 countries = ["argentina", "australia", "brazil", "china", "egypt",
-"france", "germany", "india", "italy", "australia", "south-korea",
+"france", "germany", "india", "italy", "australia", "south korea",
 "spain", "syria", "thailand", "turkey"];
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
