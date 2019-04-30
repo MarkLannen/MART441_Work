@@ -54,8 +54,6 @@ function update()
 
     // console.log(canvas.width);
 
-
-
     for (i = 0; i < imgArray.length; i ++){
         if (imgArray[i].y_coord <= 0 || imgArray[i].y_coord >= 525) {
             imgArray[i].y_step = imgArray[i].y_step *-1;
@@ -87,14 +85,10 @@ $(document).ready(function(){
                 if (answer == imgArray[i].get_countryName) {
                     // Add success here.
                     imgArray.splice(i,1);
-
                 }
-
                 break;
-
             }
         }
-
     });
 });
 
