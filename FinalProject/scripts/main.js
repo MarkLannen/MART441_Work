@@ -84,9 +84,12 @@ $(document).ready(function(){
                 var answer = window.prompt("What is the name of this country?");
                 if (answer == imgArray[i].get_countryName) {
                     // Add success here.
+                    console.log(imgArray[i].get_countryName);
+                    document.getElementById(imgArray[i].get_countryName).style.display = "none";
                     imgArray.splice(i,1);
+
                     //document.getelementbyID - name country by ID, set display to none.
-                    document.getElementById("imgArray[i].get_countryName").style.display = "none";
+
                     // document.getElementById("australia").style.display = "none";
                 }
                 break;
