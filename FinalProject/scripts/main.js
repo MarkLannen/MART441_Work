@@ -86,7 +86,8 @@ $(document).ready(function(){
                     // Add success here.
                     imgArray.splice(i,1);
                     //document.getelementbyID - name country by ID, set display to none.
-                    document.getElementById("argentina").style.display = "none";
+                    document.getElementById("imgArray[i].get_countryName").style.display = "none";
+                    // document.getElementById("australia").style.display = "none";
                 }
                 break;
             }
