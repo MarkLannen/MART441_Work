@@ -13,5 +13,8 @@
     border: 1px solid green ;
     width: 100px;
     text-align: center;
+}
 
+.flexbox-container {
+    display: flex;
 }

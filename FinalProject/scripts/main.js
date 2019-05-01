@@ -85,6 +85,7 @@ $(document).ready(function(){
                 if (answer == imgArray[i].get_countryName) {
                     // Add success here.
                     imgArray.splice(i,1);
+                    //document.getelementbyID - name country by ID, set display to none.
                 }
                 break;
             }
