@@ -52,7 +52,7 @@ function update()
         imgArray[i].x = imgArray[i].x + imgArray[i].x_step;
     }
 
-    // console.log(canvas.width);
+    console.log(canvas.width);
 
     for (i = 0; i < imgArray.length; i ++){
         if (imgArray[i].y_coord <= 0 || imgArray[i].y_coord >= 525) {
@@ -81,7 +81,7 @@ $(document).ready(function(){
                 imgArray[i].x_step = 0;
                 imgArray[i].y_step = 0;
                 console.log(imgArray[i].get_countryName);
-                var answer = window.prompt("What is the name of this country?");
+                var answer = window.prompt("What is the name of the country you selected?");
                 if (answer == imgArray[i].get_countryName) {
                     // Add success here.
                     console.log(imgArray[i].get_countryName);
@@ -98,7 +98,7 @@ $(document).ready(function(){
     });
 });
 
-//Collision detection function. Called in the click event to determine where the
+//Collision detection function. Called in the click event to determine where
 // on the coordinate plane the mouse click occurred.
 
     function hasCollided(square, country) {
