@@ -43,15 +43,25 @@ function update()
 //update coordinates to create animation and canvas edge detection
 {
     for (i = 0; i < imgArray.length; i ++){
-        // console.log(newImage.width);
+        for (j = 0; j < imgArray.length; j ++) {
+            if (true){
+                ((square.y + square.height) < (imgArray[i].y)) ||
+                (square.y > (imgArray[i].y + imgArray[i].get_path.height)) ||
+                ((square.x + square.width) < imgArray[i].x) ||
+                (square.x > (imgArray[i].x + imgArray[i].get_path.width))
+            }
+        }
 
+    }
+    
+    
+    
+    for (i = 0; i < imgArray.length; i ++){
         if (imgArray[i].x_coord <= 0 || imgArray[i].x_coord >= canvas.width - imgArray[i].get_path.width) {
             imgArray[i].x_step = imgArray[i].x_step *-1;
         }
         imgArray[i].x = imgArray[i].x + imgArray[i].x_step;
     }
-
-    console.log(canvas.width);
 
     for (i = 0; i < imgArray.length; i ++){
         if (imgArray[i].y_coord <= 0 || imgArray[i].y_coord >= canvas.height - imgArray[i].get_path.height ) {
