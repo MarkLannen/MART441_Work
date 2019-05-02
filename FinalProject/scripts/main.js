@@ -71,6 +71,7 @@ $(document).ready(function(){
         square.x = event.clientX;
         square.y = event.clientY;
         console.log(event);
+        
         for (i = 0; i < imgArray.length; i ++) {
             if (hasCollided(square, imgArray[i])){
                 imgArray[i].x_step = 0;
@@ -82,6 +83,9 @@ $(document).ready(function(){
                     console.log(imgArray[i].get_countryName);
                     document.getElementById(imgArray[i].get_countryName).style.display = "none";
                     imgArray.splice(i,1);
+                }
+                if (imgArray.length == 0){
+                    window.alert("Congratulations! You have finished the game!");
                 }
                 break;
             }
