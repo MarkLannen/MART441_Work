@@ -107,12 +107,12 @@ $(document).ready(function(){
             ((square.x + square.width) < imgArray[i].x) ||
             (square.x > (imgArray[i].x + imgArray[i].get_path.width))
         );
-    };
-        function countryCollided(country1, country2) {
+    }
+        function hasCountryCollided(country1, country2) {
             return !(
                 ((square.y + square.height) < (imgArray[i].y)) ||
                 (square.y > (imgArray[i].y + imgArray[i].get_path.height)) ||
                 ((square.x + square.width) < imgArray[i].x) ||
                 (square.x > (imgArray[i].x + imgArray[i].get_path.width))
             );
-};
+}
