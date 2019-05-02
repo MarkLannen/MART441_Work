@@ -54,7 +54,7 @@ function update()
     console.log(canvas.width);
 
     for (i = 0; i < imgArray.length; i ++){
-        if (imgArray[i].y_coord <= 0 || imgArray[i].y_coord >= 525) {
+        if (imgArray[i].y_coord <= 0 || imgArray[i].y_coord >= canvas.height - imgArray[i].get_path.height ) {
             imgArray[i].y_step = imgArray[i].y_step *-1;
         }
         imgArray[i].y = imgArray[i].y + imgArray[i].y_step;
