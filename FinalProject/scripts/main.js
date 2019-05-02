@@ -45,7 +45,7 @@ function update()
     for (i = 0; i < imgArray.length; i ++){
         // console.log(newImage.width);
 
-        if (imgArray[i].x_coord <= 0 || imgArray[i].x_coord >= 750) {
+        if (imgArray[i].x_coord <= 0 || imgArray[i].x_coord >= canvas.width - imgArray[i].get_path.width) {
             imgArray[i].x_step = imgArray[i].x_step *-1;
         }
         imgArray[i].x = imgArray[i].x + imgArray[i].x_step;
