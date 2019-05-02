@@ -41,21 +41,7 @@ drawSquare();
 
 function update()
 //update coordinates to create animation and canvas edge detection
-{
-    for (i = 0; i < imgArray.length; i ++){
-        for (j = 0; j < imgArray.length; j ++) {
-            if (true){
-                ((square.y + square.height) < (imgArray[i].y)) ||
-                (square.y > (imgArray[i].y + imgArray[i].get_path.height)) ||
-                ((square.x + square.width) < imgArray[i].x) ||
-                (square.x > (imgArray[i].x + imgArray[i].get_path.width))
-            }
-        }
-
-    }
-    
-    
-    
+{      
     for (i = 0; i < imgArray.length; i ++){
         if (imgArray[i].x_coord <= 0 || imgArray[i].x_coord >= canvas.width - imgArray[i].get_path.width) {
             imgArray[i].x_step = imgArray[i].x_step *-1;
@@ -96,10 +82,6 @@ $(document).ready(function(){
                     console.log(imgArray[i].get_countryName);
                     document.getElementById(imgArray[i].get_countryName).style.display = "none";
                     imgArray.splice(i,1);
-
-                    //document.getelementbyID - name country by ID, set display to none.
-
-                    // document.getElementById("australia").style.display = "none";
                 }
                 break;
             }
@@ -118,11 +100,11 @@ $(document).ready(function(){
             (square.x > (imgArray[i].x + imgArray[i].get_path.width))
         );
     }
-        function hasCountryCollided(country1, country2) {
-            return !(
-                ((square.y + square.height) < (imgArray[i].y)) ||
-                (square.y > (imgArray[i].y + imgArray[i].get_path.height)) ||
-                ((square.x + square.width) < imgArray[i].x) ||
-                (square.x > (imgArray[i].x + imgArray[i].get_path.width))
-            );
-}
+        // function hasCountryCollided(country1, country2) {
+        //     return !(
+        //         ((square.y + square.height) < (imgArray[i].y)) ||
+        //         (square.y > (imgArray[i].y + imgArray[i].get_path.height)) ||
+        //         ((square.x + square.width) < imgArray[i].x) ||
+        //         (square.x > (imgArray[i].x + imgArray[i].get_path.width))
+        //     );
+// }
