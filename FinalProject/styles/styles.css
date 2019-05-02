@@ -1,8 +1,9 @@
 #myCanvas {
-    border: black;
+    border: #FF3D00;
     border-style: solid;
     border-width: 5px;
     background-color: #ccc;
+    border-radius: 10px;
 }
 
 #myCanvas {
@@ -10,9 +11,10 @@
 }
 
 .boxed {
-    border: 1px solid green ;
+    border: 1px solid #E8B60C ;
     width: 100px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .flexbox-container {
