@@ -9,11 +9,25 @@ the basic game to work. When I finally got to that point, I then did my best to 
 more appealing.
 
 ### Success
-My biggest success was eventually getting the basic game to work. I was particularly pleased with myself when I got every 
-edge of each country to bounce evenly off of the canvas edge. 
+My biggest success was eventually getting the basic game to just work. I was particularly pleased (probably over-pleased) 
+with myself when I got every edge of each country to bounce evenly off of the canvas edge. One thing that surprised me 
+was that in order to access the width and height of the object I had to use: imgArray[i].get_path.height and imgArray[i].get_path.width. 
+I had assumed that it would just be mgArray[i].height etc. So, I've still got plenty of work to do to really understand 
+OOP as creating and accessing object, getter/setter etc. still don't make complete sense to me yet. I was also pleased
+to get the button to disappear when the corresponding country was selected. At first I had that block of code below the
+image array splice, and finally realized it had to be above the splice as after the splice that particular element would
+be gone. :) 
 
 ### Difficulties
-As usual, my biggest challenge was seeing the bigger picture and understanding the
-control flow and how all the individual elements worked together. This is
-becoming clearer to me as the weeks go by, but I still need quite a bit
-practise before it becomes more intuitive. 
+The biggest letdown was that I never managed to get the object collision to work. I tried for quite a while, but 
+could just never clearly see the step by step logic that I needed to do in order to make it happen. I think after a bit 
+more study I might come back to it and see if I can make it work. 
+
+Another issue that came up that I was not expecting, was that after I styled the page by adding a header and some instructions
+above the canvas, and then centered the canvas, the mouse click collisions stopped working. I think what happened is that
+once the canvas x and y did not start in the top left corner of the screen, then the mouse click coordinates, which do start 
+there, stopped matching up. I hadn't anticipated that and just ran out of time to figure out how to fix that issue. I'm 
+guessing it would involve somehow querying the size of the viewport and somehow subtracting the distance between the top
+and left of the screen from the canvas edge and factoring that in to the coordinated returned by the mouse click. (?)
+
+
