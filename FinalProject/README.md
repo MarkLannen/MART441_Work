@@ -1,15 +1,16 @@
 # Mark Lannen MART 441
-## HW-10 Readme
+## Final Project Readme
 
 ### Process
-I started very simply and slowly built everything up. I tried not to move on until
-the current thing was working
+I spent several weeks on this game, and the scope changed a bit as I realized I had bitten off a little more than I could chew.
+I started with creating the array and populating it with the country images. Then I worked on creating the classes, and 
+changing the code structure so that it was more object-oriented. I then spent quite a bit of time just trying to get
+the basic game to work. When I finally got to that point, I then did my best to style the game so that it looks a little
+more appealing.
 
 ### Success
-My biggest success was declaring the class and then instantiating it properly. I was
-also very pleased that I eventually got the background color to change. Not entirely sure
-why I had to use 'background' in the .js file when it was 'background-color' in the css.
-Will have to look that one up.  :)
+My biggest success was eventually getting the basic game to work. I was particularly pleased with myself when I got every 
+edge of each country to bounce evenly off of the canvas edge. 
 
 ### Difficulties
 As usual, my biggest challenge was seeing the bigger picture and understanding the
