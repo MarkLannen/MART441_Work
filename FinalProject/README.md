@@ -9,12 +9,12 @@ the basic game to work. When I finally got to that point, I then did my best to 
 more appealing.
 
 ### Success
-My biggest success was eventually getting the basic game to just work. I was particularly pleased (probably over-pleased) 
+My biggest success was eventually just getting the basic game to work. I was particularly pleased (probably over-pleased) 
 with myself when I got every edge of each country to bounce evenly off of the canvas edge. One thing that surprised me 
 was that in order to access the width and height of the object I had to use: imgArray[i].get_path.height and imgArray[i].get_path.width. 
 I had assumed that it would just be mgArray[i].height etc. So, I've still got plenty of work to do to really understand 
-OOP as creating and accessing object, getter/setter etc. still don't make complete sense to me yet. I was also pleased
-to get the button to disappear when the corresponding country was selected. At first I had that block of code below the
+OOP and creating and accessing objects, getters/setters etc. It still don't make complete sense to me yet. I was also pleased
+to get the correct button to disappear when the corresponding country was selected. At first I had that block of code below the
 image array splice, and finally realized it had to be above the splice as after the splice that particular element would
 be gone. :) 
 
@@ -28,6 +28,8 @@ above the canvas, and then centered the canvas, the mouse click collisions stopp
 once the canvas x and y did not start in the top left corner of the screen, then the mouse click coordinates, which do start 
 there, stopped matching up. I hadn't anticipated that and just ran out of time to figure out how to fix that issue. I'm 
 guessing it would involve somehow querying the size of the viewport and somehow subtracting the distance between the top
-and left of the screen from the canvas edge and factoring that in to the coordinated returned by the mouse click. (?)
+and left of the screen from the canvas edge and factoring that in to the coordinated returned by the mouse click. Or maybe
+there is a way of orienting the mouse click to the edge of the canvas, no matter where it is on the screen(?) Again, just
+ran out of time to try and look in to that.
 
 

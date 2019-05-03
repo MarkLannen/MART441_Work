@@ -37,11 +37,12 @@ h2 {
     border-width: 5px;
     background-color: #1e272c;
     border-radius: 10px;
-    /* width: 50%;
-    text-align:center; */
-   
 }
 
+.instructions {
+    color: white;
+    margin-top: 15px;
+}
 
 
 .boxed {
