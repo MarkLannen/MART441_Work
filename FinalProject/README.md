@@ -32,4 +32,10 @@ and left of the screen from the canvas edge and factoring that in to the coordin
 there is a way of orienting the mouse click to the edge of the canvas, no matter where it is on the screen(?) Again, just
 ran out of time to try and look in to that.
 
+That is why the header and instructions are at the bottom...
+
+With more time and a bit more knowledge I think I can make it look much better, and I would really like to expand that game 
+to include more countries, maybe randomize which ones get selected, or allow players to pick a continent etc. But that
+will take quite a bit of work, but would be good practise. 
+
 
