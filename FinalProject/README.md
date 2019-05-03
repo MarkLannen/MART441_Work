@@ -34,8 +34,15 @@ ran out of time to try and look in to that.
 
 That is why the header and instructions are at the bottom...
 
+Another thing I could have done is made sure that all the countries appeared completely within the bounds of the canvas. 
+The issue is that if part of them first appears outside the visual canvas then they bounce along the bottom and sides 
+without ever moving in to the center. I'm not sure why this is happening, but with some experimentation I could probably 
+manage to fix it.
+
 With more time and a bit more knowledge I think I can make it look much better, and I would really like to expand that game 
 to include more countries, maybe randomize which ones get selected, or allow players to pick a continent etc. But that
 will take quite a bit of work, but would be good practise. 
+
+
 
 
